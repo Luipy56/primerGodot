@@ -20,7 +20,7 @@ func load_save():
 	else:
 		save()
 
-func save(level=level):
+func save(newLevel=level):
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
-	file.store_line("level=%d" % level)
+	file.store_line("level=%d" % newLevel)
 	file.close()

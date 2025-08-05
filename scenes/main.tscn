@@ -1,22 +1,22 @@
 [gd_scene load_steps=21 format=3 uid="uid://docwugtass4b1"]
 
-[ext_resource type="Script" uid="uid://8ou8df15c6vk" path="res://scripts/main.gd" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://cfc3is3diiq3j" path="res://assets/img/menu/freddy/freddyMenuStatic1.png" id="2_dg77c"]
-[ext_resource type="Script" uid="uid://ci4dct4ldnnpe" path="res://scripts/menu_background.gd" id="3_h2yge"]
-[ext_resource type="AudioStream" uid="uid://da153se8upj8y" path="res://assets/sound/music/menuTheme.wav" id="4_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://ba8vvd8f41sue" path="res://assets/img/menu/texts/fnafTitle.png" id="5_7mycd"]
-[ext_resource type="Texture2D" uid="uid://dfsj5u1b5lxco" path="res://assets/img/menu/texts/newGame.png" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://c5hfw47u27572" path="res://assets/img/menu/texts/creditoScott.png" id="7_kek77"]
-[ext_resource type="Texture2D" uid="uid://es1x2apaaaxb" path="res://assets/img/menu/texts/creditoLuipy.png" id="8_4c57u"]
-[ext_resource type="Texture2D" uid="uid://bfixrvi4vpoqr" path="res://assets/img/menu/texts/continue.png" id="9_efxa6"]
-[ext_resource type="Script" uid="uid://cb7kf3e5dw7b" path="res://scripts/new_game_area.gd" id="10_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://df8aob8piq8d2" path="res://assets/img/menu/texts/arrowMenu.png" id="11_w48qg"]
-[ext_resource type="Script" uid="uid://dcpd1f2pvvq6x" path="res://scripts/continue_area.gd" id="11_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://tkvttlgy2dah" path="res://assets/img/menu/texts/nights/tNight.png" id="14_074og"]
-[ext_resource type="Script" uid="uid://cefqennat2lx2" path="res://scripts/reloadData.gd" id="14_w48qg"]
-[ext_resource type="Texture2D" uid="uid://be0bb8lg6rabf" path="res://assets/img/menu/staticLines/staticLines1.png" id="15_2cqfq"]
-[ext_resource type="Texture2D" uid="uid://bpw1meygjnip7" path="res://assets/img/menu/texts/nights/tn2.png" id="15_cegan"]
-[ext_resource type="Script" uid="uid://c3rtxli5ca14c" path="res://scripts/staticLines.gd" id="15_vivmo"]
+[ext_resource type="Script" uid="uid://8ou8df15c6vk" path="res://scripts/menu/main.gd" id="1_muem4"]
+[ext_resource type="Texture2D" uid="uid://cfc3is3diiq3j" path="res://assets/img/menu/freddy/freddyMenuStatic1.png" id="2_dp3eg"]
+[ext_resource type="Script" uid="uid://ci4dct4ldnnpe" path="res://scripts/menu/menu_background.gd" id="3_0ld40"]
+[ext_resource type="AudioStream" uid="uid://da153se8upj8y" path="res://assets/sound/music/menuTheme.wav" id="4_gqmmt"]
+[ext_resource type="Texture2D" uid="uid://ba8vvd8f41sue" path="res://assets/img/menu/texts/fnafTitle.png" id="5_yc10j"]
+[ext_resource type="Texture2D" uid="uid://c5hfw47u27572" path="res://assets/img/menu/texts/creditoScott.png" id="6_jscy8"]
+[ext_resource type="Texture2D" uid="uid://es1x2apaaaxb" path="res://assets/img/menu/texts/creditoLuipy.png" id="7_pm3ni"]
+[ext_resource type="Script" uid="uid://cb7kf3e5dw7b" path="res://scripts/menu/new_game_area.gd" id="8_y6deb"]
+[ext_resource type="Texture2D" uid="uid://df8aob8piq8d2" path="res://assets/img/menu/texts/arrowMenu.png" id="9_og1vs"]
+[ext_resource type="Texture2D" uid="uid://dfsj5u1b5lxco" path="res://assets/img/menu/texts/newGame.png" id="10_2wyq8"]
+[ext_resource type="Script" uid="uid://dcpd1f2pvvq6x" path="res://scripts/menu/continue_area.gd" id="11_vxglm"]
+[ext_resource type="Texture2D" uid="uid://bfixrvi4vpoqr" path="res://assets/img/menu/texts/continue.png" id="12_2f3dj"]
+[ext_resource type="Texture2D" uid="uid://tkvttlgy2dah" path="res://assets/img/menu/texts/nights/tNight.png" id="13_yq6so"]
+[ext_resource type="Texture2D" uid="uid://bpw1meygjnip7" path="res://assets/img/menu/texts/nights/tn2.png" id="14_fv21b"]
+[ext_resource type="Script" uid="uid://cefqennat2lx2" path="res://scripts/reloadData.gd" id="15_tel4y"]
+[ext_resource type="Texture2D" uid="uid://be0bb8lg6rabf" path="res://assets/img/menu/staticLines/staticLines1.png" id="16_qkpxi"]
+[ext_resource type="Script" uid="uid://c3rtxli5ca14c" path="res://scripts/menu/staticLines.gd" id="17_5q0nq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dg77c"]
 size = Vector2(224, 56)
@@ -28,42 +28,42 @@ size = Vector2(226, 46)
 size = Vector2(112, 112)
 
 [node name="Menu" type="Node2D"]
-script = ExtResource("1_ig7tw")
+script = ExtResource("1_muem4")
 
 [node name="menuBackground" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("2_dg77c")
-script = ExtResource("3_h2yge")
+texture = ExtResource("2_dp3eg")
+script = ExtResource("3_0ld40")
 metadata/_edit_lock_ = true
 
 [node name="menuTheme" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_1bvp3")
+stream = ExtResource("4_gqmmt")
 autoplay = true
 
 [node name="FnafTitle" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(272, 193)
 scale = Vector2(1.1, 1.1)
-texture = ExtResource("5_7mycd")
+texture = ExtResource("5_yc10j")
 
 [node name="CreditoScott" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(1152, 656)
-texture = ExtResource("7_kek77")
+texture = ExtResource("6_jscy8")
 
 [node name="CreditoLuipy" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(1238.5, 685)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("8_4c57u")
+texture = ExtResource("7_pm3ni")
 
 [node name="NewGameArea" type="Area2D" parent="."]
-script = ExtResource("10_ycdy4")
+script = ExtResource("8_y6deb")
 
 [node name="ArrowNewGame" type="Sprite2D" parent="NewGameArea"]
 visible = false
 position = Vector2(124, 426)
-texture = ExtResource("11_w48qg")
+texture = ExtResource("9_og1vs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NewGameArea"]
 position = Vector2(272, 428)
@@ -73,21 +73,21 @@ shape = SubResource("RectangleShape2D_dg77c")
 texture_filter = 3
 position = Vector2(272, 424)
 scale = Vector2(1.1, 1.1)
-texture = ExtResource("6_272bh")
+texture = ExtResource("10_2wyq8")
 
 [node name="ContinueArea" type="Area2D" parent="."]
-script = ExtResource("11_ycdy4")
+script = ExtResource("11_vxglm")
 
 [node name="ArrowContinue" type="Sprite2D" parent="ContinueArea"]
 visible = false
 position = Vector2(124, 499)
-texture = ExtResource("11_w48qg")
+texture = ExtResource("9_og1vs")
 
 [node name="Continue" type="Sprite2D" parent="ContinueArea"]
 texture_filter = 3
 position = Vector2(271, 497)
 scale = Vector2(1.1, 1.1)
-texture = ExtResource("9_efxa6")
+texture = ExtResource("12_2f3dj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ContinueArea"]
 position = Vector2(271, 497)
@@ -97,16 +97,16 @@ shape = SubResource("RectangleShape2D_ycdy4")
 texture_filter = 3
 position = Vector2(204, 545)
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("14_074og")
+texture = ExtResource("13_yq6so")
 
 [node name="NightNumber" type="Sprite2D" parent="ContinueArea"]
 texture_filter = 3
 position = Vector2(257, 543)
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("15_cegan")
+texture = ExtResource("14_fv21b")
 
 [node name="reloadData" type="Area2D" parent="."]
-script = ExtResource("14_w48qg")
+script = ExtResource("15_tel4y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="reloadData"]
 position = Vector2(992, 280)
@@ -114,8 +114,8 @@ shape = SubResource("RectangleShape2D_w48qg")
 
 [node name="staticLines" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-texture = ExtResource("15_2cqfq")
-script = ExtResource("15_vivmo")
+texture = ExtResource("16_qkpxi")
+script = ExtResource("17_5q0nq")
 
 [connection signal="input_event" from="NewGameArea" to="NewGameArea" method="_on_input_event"]
 [connection signal="mouse_entered" from="NewGameArea" to="NewGameArea" method="_on_mouse_entered"]

@@ -8,6 +8,7 @@ func _on_mouse_entered():
 func _on_mouse_exited():
 	arrow.visible = false
 
-func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		print("Me has clicado")
+		print("Se va a cambiar de escena")
+		get_tree().change_scene_to_file("res://scenes/office.tscn")

@@ -1,0 +1,142 @@
+[gd_scene load_steps=25 format=3 uid="uid://dsydns34wpntp"]
+
+[ext_resource type="Script" uid="uid://cryp86thg0yj3" path="res://scripts/office/mainOffice.gd" id="1_3e7dm"]
+[ext_resource type="AudioStream" uid="uid://bckgx8drt0b3u" path="res://assets/sound/music/ambience2.wav" id="2_n0wcf"]
+[ext_resource type="Script" uid="uid://d3jl1qrpexsb4" path="res://scripts/office/hover_controller.gd" id="3_jwaux"]
+[ext_resource type="Texture2D" uid="uid://pyhejawpsd8q" path="res://assets/img/office/background/mainOffice.png" id="4_7jj4f"]
+[ext_resource type="Texture2D" uid="uid://c45dvp0shgyol" path="res://assets/img/office/laptop/laptopFrame1.png" id="5_ujkv6"]
+[ext_resource type="Texture2D" uid="uid://cd8gilhbl47o5" path="res://assets/img/office/laptop/laptopFrame2.png" id="6_k578b"]
+[ext_resource type="Texture2D" uid="uid://c87imc5u78k3c" path="res://assets/img/office/laptop/laptopFrame3.png" id="7_07d2k"]
+[ext_resource type="Texture2D" uid="uid://djmwa5081iyq4" path="res://assets/img/office/laptop/laptopFrame4.png" id="8_gnmmx"]
+[ext_resource type="Texture2D" uid="uid://b3gqk07nukbde" path="res://assets/img/office/laptop/laptopFrame5.png" id="9_jp1e5"]
+[ext_resource type="Texture2D" uid="uid://bwyxaqvcog68r" path="res://assets/img/office/laptop/laptopFrame6.png" id="10_kviqm"]
+[ext_resource type="Texture2D" uid="uid://ylbovnt0m4bs" path="res://assets/img/office/laptop/laptopFrame7.png" id="11_ja80a"]
+[ext_resource type="Texture2D" uid="uid://bfeuy41q2y5tt" path="res://assets/img/office/laptop/laptopFrame8.png" id="12_alkg7"]
+[ext_resource type="Texture2D" uid="uid://fbokhw0kvev2" path="res://assets/img/office/laptop/laptopFrame9.png" id="13_3hjlj"]
+[ext_resource type="Texture2D" uid="uid://cd0eybebs8voe" path="res://assets/img/office/laptop/laptopFrame10.png" id="14_qg43x"]
+[ext_resource type="Script" uid="uid://bjgjxbhsmyram" path="res://scenes/laptopButton.gd" id="15_k578b"]
+[ext_resource type="AudioStream" uid="uid://6b4o4y2jig71" path="res://assets/sound/sfx/laptop/openLaptop.wav" id="16_07d2k"]
+[ext_resource type="Script" uid="uid://dy32glt5ie8it" path="res://scripts/office/cameraLogic/cameras_node.gd" id="17_kviqm"]
+[ext_resource type="Script" uid="uid://c7cdy87rqay82" path="res://scripts/office/cameraLogic/cam_1a.gd" id="18_jp1e5"]
+[ext_resource type="Texture2D" uid="uid://u1f7nci767em" path="res://assets/img/office/cameras/mainCameras.png" id="18_kviqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qphb6"]
+size = Vector2(142, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hub07"]
+size = Vector2(142, 720.25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ywr3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ujkv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_k578b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_07d2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gnmmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jp1e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kviqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ja80a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_alkg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3hjlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qg43x")
+}],
+"loop": false,
+"name": &"openingLaptop",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07d2k"]
+size = Vector2(996, 123)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ja80a"]
+size = Vector2(59, 39)
+
+[node name="Office" type="Node2D"]
+script = ExtResource("1_3e7dm")
+metadata/_edit_lock_ = true
+
+[node name="ambience2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_n0wcf")
+volume_db = 4.0
+autoplay = true
+
+[node name="mainOffice" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("4_7jj4f")
+metadata/_edit_lock_ = true
+
+[node name="hoverController" type="Node2D" parent="."]
+script = ExtResource("3_jwaux")
+
+[node name="hoverLeft" type="Area2D" parent="hoverController"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hoverController/hoverLeft"]
+position = Vector2(1209, 360)
+shape = SubResource("RectangleShape2D_qphb6")
+
+[node name="hoverRight" type="Area2D" parent="hoverController"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hoverController/hoverRight"]
+position = Vector2(71, 359.875)
+shape = SubResource("RectangleShape2D_hub07")
+
+[node name="openingLaptop" type="AnimatedSprite2D" parent="."]
+position = Vector2(640, 360)
+sprite_frames = SubResource("SpriteFrames_8ywr3")
+animation = &"openingLaptop"
+metadata/_edit_lock_ = true
+
+[node name="laptopButton" type="Area2D" parent="."]
+script = ExtResource("15_k578b")
+
+[node name="laptopButton" type="CollisionShape2D" parent="laptopButton"]
+position = Vector2(640, 658.5)
+shape = SubResource("RectangleShape2D_07d2k")
+
+[node name="openingLaptopSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_07d2k")
+
+[node name="camerasNode" type="Node2D" parent="."]
+script = ExtResource("17_kviqm")
+
+[node name="cam" type="Sprite2D" parent="camerasNode"]
+
+[node name="camUI" type="Sprite2D" parent="camerasNode"]
+texture_filter = 3
+position = Vector2(640, 360)
+texture = ExtResource("18_kviqm")
+metadata/_edit_lock_ = true
+
+[node name="Cam1A" type="Area2D" parent="camerasNode"]
+script = ExtResource("18_jp1e5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1A"]
+position = Vector2(984.5, 354.5)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam1B" type="Area2D" parent="camerasNode"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1B"]
+position = Vector2(965, 410)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[connection signal="input_event" from="camerasNode/Cam1A" to="camerasNode/Cam1A" method="_on_input_event"]

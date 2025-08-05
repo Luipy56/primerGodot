@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var label = $Label
+#@onready var label = $Label
 #
 #func _ready():
 	#label.text = "He editado el texto\nHe editado el textoHe editado el textoHe editado el textoHe editado el texto"

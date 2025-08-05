@@ -1,6 +1,12 @@
 extends Area2D
 
+@onready var area = self
+@onready var camerasNode = $"../../camerasNode"
+
+
+func _ready() -> void:
+	pass
+	
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		print("Alternando estado")
-		SaveData.save(1 if SaveData.level == 2 else 2)
+		camerasNode.changeCamera("Hola")
