@@ -25,8 +25,9 @@ var animatronicCamsList = []
 #}
 
 func _ready() -> void:
+	pass
 	#spriteCam.texture = null
-	cameraSystem.visible = true
+	#cameraSystem.visible = true
 	#var fileNames = [
 		#"cam1A",
 		#"cam1B",
@@ -75,3 +76,20 @@ func changeCamera(id):
 	print(id)
 	
 	pass
+	
+func autoMoveCamera():
+	cameraSystem.position.x += 1
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

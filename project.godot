@@ -18,6 +18,7 @@ config/icon="res://iconBack.svg"
 [autoload]
 
 SaveData="*res://scripts/SaveData.gd"
+NightStats="*res://nightStats.gd"
 
 [display]
 
