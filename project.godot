@@ -17,12 +17,16 @@ config/icon="res://iconBack.svg"
 
 [autoload]
 
-SaveData="*res://SaveData.gd"
+SaveData="*res://scripts/SaveData.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+
+[dotnet]
+
+project/assembly_name="Primer Proyecto"
 
 [input]
 
