@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3t0fgjut3ti5"
-path="res://.godot/imported/cam6.png-ec23f2f7b6008f7a771d518dd8737e07.ctex"
+uid="uid://barbsyalju1y8"
+path="res://.godot/imported/cam2B.png-59c99efd7cbc54f216908dbd8552c97e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/office/cameras/cam6.png"
-dest_files=["res://.godot/imported/cam6.png-ec23f2f7b6008f7a771d518dd8737e07.ctex"]
+source_file="res://assets/img/office/cameras/Cam2B/cam2B.png"
+dest_files=["res://.godot/imported/cam2B.png-59c99efd7cbc54f216908dbd8552c97e.ctex"]
 
 [params]
 

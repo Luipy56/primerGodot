@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dsydns34wpntp"]
+[gd_scene load_steps=46 format=3 uid="uid://dsydns34wpntp"]
 
 [ext_resource type="Script" uid="uid://cryp86thg0yj3" path="res://scripts/office/mainOffice.gd" id="1_3e7dm"]
 [ext_resource type="AudioStream" uid="uid://bckgx8drt0b3u" path="res://assets/sound/music/ambience2.wav" id="2_n0wcf"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c45dvp0shgyol" path="res://assets/img/office/laptop/laptopFrame1.png" id="5_ujkv6"]
 [ext_resource type="Texture2D" uid="uid://cd8gilhbl47o5" path="res://assets/img/office/laptop/laptopFrame2.png" id="6_k578b"]
 [ext_resource type="Texture2D" uid="uid://c87imc5u78k3c" path="res://assets/img/office/laptop/laptopFrame3.png" id="7_07d2k"]
+[ext_resource type="Texture2D" uid="uid://mdycedvs0wgs" path="res://assets/img/office/cameras/Cam1A/cam1A.png" id="7_sjdia"]
 [ext_resource type="Texture2D" uid="uid://djmwa5081iyq4" path="res://assets/img/office/laptop/laptopFrame4.png" id="8_gnmmx"]
 [ext_resource type="Texture2D" uid="uid://b3gqk07nukbde" path="res://assets/img/office/laptop/laptopFrame5.png" id="9_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://bwyxaqvcog68r" path="res://assets/img/office/laptop/laptopFrame6.png" id="10_kviqm"]
@@ -19,12 +20,35 @@
 [ext_resource type="Script" uid="uid://dy32glt5ie8it" path="res://scripts/office/cameraLogic/cameras_node.gd" id="17_kviqm"]
 [ext_resource type="Script" uid="uid://c7cdy87rqay82" path="res://scripts/office/cameraLogic/cam_1a.gd" id="18_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://u1f7nci767em" path="res://assets/img/office/cameras/mainCameras.png" id="18_kviqm"]
+[ext_resource type="Texture2D" uid="uid://c5q5uhq0b7hbg" path="res://assets/img/office/cameras/Cam1B/cam1B.png" id="18_m4cp1"]
+[ext_resource type="Texture2D" uid="uid://ctkmsfxdswmgt" path="res://assets/img/office/cameras/Cam1C/cam1C.png" id="19_sjdia"]
+[ext_resource type="Texture2D" uid="uid://pvoc0ywhkdun" path="res://assets/img/office/cameras/Cam2A/cam2A.png" id="20_0p3hi"]
+[ext_resource type="Script" uid="uid://dfv10stwr3pdc" path="res://scripts/office/cameraLogic/cam1b.gd" id="20_ja80a"]
+[ext_resource type="Script" uid="uid://dmlunhpk0uvvb" path="res://scripts/office/cameraLogic/cam1c.gd" id="21_alkg7"]
+[ext_resource type="Texture2D" uid="uid://barbsyalju1y8" path="res://assets/img/office/cameras/Cam2B/cam2B.png" id="21_bkq84"]
+[ext_resource type="Script" uid="uid://d0030mywurug1" path="res://scripts/office/cameraLogic/cam2a.gd" id="22_3hjlj"]
+[ext_resource type="Texture2D" uid="uid://djxi7iegt1bhy" path="res://assets/img/office/cameras/Cam3/cam3.png" id="22_osgti"]
+[ext_resource type="Texture2D" uid="uid://dw7g80pb2t3bk" path="res://assets/img/office/cameras/Cam4A/cam4A.png" id="23_142py"]
+[ext_resource type="Script" uid="uid://bdfsk3iosip3g" path="res://scripts/office/cameraLogic/cam2b.gd" id="23_g1ciw"]
+[ext_resource type="Texture2D" uid="uid://tuxuvxr0h301" path="res://assets/img/office/cameras/Cam4B/cam4B.png" id="24_65uj5"]
+[ext_resource type="Script" uid="uid://btjt2sdnhhwaw" path="res://scripts/office/cameraLogic/cam3.gd" id="24_u5glt"]
+[ext_resource type="Script" uid="uid://dnd4efga1qnge" path="res://scripts/office/cameraLogic/cam4a.gd" id="25_3u7yi"]
+[ext_resource type="Texture2D" uid="uid://cnftg3pfnnkq6" path="res://assets/img/office/cameras/Cam5/cam5.png" id="25_cqgbc"]
+[ext_resource type="Texture2D" uid="uid://d3t0fgjut3ti5" path="res://assets/img/office/cameras/Cam6/cam6.png" id="26_ak7v7"]
+[ext_resource type="Script" uid="uid://oqugttsnyaln" path="res://scripts/office/cameraLogic/cam4b.gd" id="26_eet0l"]
+[ext_resource type="Script" uid="uid://g6xot8uwi1nw" path="res://scripts/office/cameraLogic/cam5.gd" id="27_42gc7"]
+[ext_resource type="Texture2D" uid="uid://b0kx4aciix5iq" path="res://assets/img/office/cameras/Cam7/cam7.png" id="27_likdn"]
+[ext_resource type="Script" uid="uid://5iwin7t4b0uk" path="res://scripts/office/cameraLogic/cam6.gd" id="28_gf52q"]
+[ext_resource type="Script" uid="uid://c3dv1gxomj7b8" path="res://scripts/office/cameraLogic/cam7.gd" id="29_fsavt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qphb6"]
 size = Vector2(142, 720)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hub07"]
 size = Vector2(142, 720.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ja80a"]
+size = Vector2(59, 39)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8ywr3"]
 animations = [{
@@ -67,9 +91,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07d2k"]
 size = Vector2(996, 123)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ja80a"]
-size = Vector2(59, 39)
-
 [node name="Office" type="Node2D"]
 script = ExtResource("1_3e7dm")
 metadata/_edit_lock_ = true
@@ -99,6 +120,299 @@ shape = SubResource("RectangleShape2D_qphb6")
 position = Vector2(71, 359.875)
 shape = SubResource("RectangleShape2D_hub07")
 
+[node name="openingLaptopSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_07d2k")
+
+[node name="camerasNode" type="Node2D" parent="."]
+script = ExtResource("17_kviqm")
+
+[node name="cameraSystem" type="Node2D" parent="camerasNode"]
+position = Vector2(640, 360)
+
+[node name="Cam1A" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+texture = ExtResource("7_sjdia")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+
+[node name="Cam1B" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+texture = ExtResource("18_m4cp1")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+
+[node name="Cam1C" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+texture = ExtResource("19_sjdia")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+
+[node name="Cam2A" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+texture = ExtResource("20_0p3hi")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+
+[node name="Cam2B" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+texture = ExtResource("21_bkq84")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+
+[node name="Cam3" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+texture = ExtResource("22_osgti")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+
+[node name="Cam4A" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+texture = ExtResource("23_142py")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+
+[node name="Cam4B" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+texture = ExtResource("24_65uj5")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+
+[node name="Cam5" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+texture = ExtResource("25_cqgbc")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+
+[node name="Cam6" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+texture = ExtResource("26_ak7v7")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+
+[node name="Cam7" type="Node2D" parent="camerasNode/cameraSystem"]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+texture = ExtResource("27_likdn")
+
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+
+[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+
+[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+
+[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+
+[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+
+[node name="camUI" type="Sprite2D" parent="camerasNode"]
+visible = false
+texture_filter = 3
+position = Vector2(640, 360)
+texture = ExtResource("18_kviqm")
+metadata/_edit_lock_ = true
+
+[node name="cam" type="Sprite2D" parent="camerasNode"]
+
+[node name="Cam1A" type="Area2D" parent="camerasNode"]
+script = ExtResource("18_jp1e5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1A"]
+position = Vector2(984.5, 354.5)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam1B" type="Area2D" parent="camerasNode"]
+script = ExtResource("20_ja80a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1B"]
+position = Vector2(965, 410)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam1C" type="Area2D" parent="camerasNode"]
+script = ExtResource("21_alkg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1C"]
+position = Vector2(933, 488)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam2A" type="Area2D" parent="camerasNode"]
+script = ExtResource("22_3hjlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam2A"]
+position = Vector2(984, 603)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam2B" type="Area2D" parent="camerasNode"]
+script = ExtResource("23_g1ciw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam2B"]
+position = Vector2(984, 644)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam3" type="Area2D" parent="camerasNode"]
+script = ExtResource("24_u5glt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam3"]
+position = Vector2(900, 586)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam4A" type="Area2D" parent="camerasNode"]
+script = ExtResource("25_3u7yi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam4A"]
+position = Vector2(1090, 605)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam4B" type="Area2D" parent="camerasNode"]
+script = ExtResource("26_eet0l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam4B"]
+position = Vector2(1090, 645)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam5" type="Area2D" parent="camerasNode"]
+script = ExtResource("27_42gc7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam5"]
+position = Vector2(858, 437)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam6" type="Area2D" parent="camerasNode"]
+script = ExtResource("28_gf52q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam6"]
+position = Vector2(1188, 569)
+shape = SubResource("RectangleShape2D_ja80a")
+
+[node name="Cam7" type="Area2D" parent="camerasNode"]
+script = ExtResource("29_fsavt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam7"]
+position = Vector2(1196, 438)
+shape = SubResource("RectangleShape2D_ja80a")
+
 [node name="openingLaptop" type="AnimatedSprite2D" parent="."]
 position = Vector2(640, 360)
 sprite_frames = SubResource("SpriteFrames_8ywr3")
@@ -112,31 +426,14 @@ script = ExtResource("15_k578b")
 position = Vector2(640, 658.5)
 shape = SubResource("RectangleShape2D_07d2k")
 
-[node name="openingLaptopSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("16_07d2k")
-
-[node name="camerasNode" type="Node2D" parent="."]
-script = ExtResource("17_kviqm")
-
-[node name="cam" type="Sprite2D" parent="camerasNode"]
-
-[node name="camUI" type="Sprite2D" parent="camerasNode"]
-texture_filter = 3
-position = Vector2(640, 360)
-texture = ExtResource("18_kviqm")
-metadata/_edit_lock_ = true
-
-[node name="Cam1A" type="Area2D" parent="camerasNode"]
-script = ExtResource("18_jp1e5")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1A"]
-position = Vector2(984.5, 354.5)
-shape = SubResource("RectangleShape2D_ja80a")
-
-[node name="Cam1B" type="Area2D" parent="camerasNode"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="camerasNode/Cam1B"]
-position = Vector2(965, 410)
-shape = SubResource("RectangleShape2D_ja80a")
-
 [connection signal="input_event" from="camerasNode/Cam1A" to="camerasNode/Cam1A" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam1B" to="camerasNode/Cam1B" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam1C" to="camerasNode/Cam1C" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam2A" to="camerasNode/Cam2A" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam2B" to="camerasNode/Cam2B" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam3" to="camerasNode/Cam3" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam4A" to="camerasNode/Cam4A" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam4B" to="camerasNode/Cam4B" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam5" to="camerasNode/Cam5" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam6" to="camerasNode/Cam6" method="_on_input_event"]
+[connection signal="input_event" from="camerasNode/Cam7" to="camerasNode/Cam7" method="_on_input_event"]
