@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://dsydns34wpntp"]
+[gd_scene load_steps=55 format=3 uid="uid://dsydns34wpntp"]
 
 [ext_resource type="Script" uid="uid://cryp86thg0yj3" path="res://scripts/office/mainOffice.gd" id="1_3e7dm"]
 [ext_resource type="AudioStream" uid="uid://bckgx8drt0b3u" path="res://assets/sound/music/ambience2.wav" id="2_n0wcf"]
@@ -6,10 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://pyhejawpsd8q" path="res://assets/img/office/background/mainOffice.png" id="4_7jj4f"]
 [ext_resource type="Texture2D" uid="uid://c45dvp0shgyol" path="res://assets/img/office/laptop/laptopFrame1.png" id="5_ujkv6"]
 [ext_resource type="Texture2D" uid="uid://cd8gilhbl47o5" path="res://assets/img/office/laptop/laptopFrame2.png" id="6_k578b"]
+[ext_resource type="Script" uid="uid://ck48ihxgb2yqn" path="res://scripts/office/cameraLogic/cameraSystem.gd" id="6_osgti"]
 [ext_resource type="Texture2D" uid="uid://c87imc5u78k3c" path="res://assets/img/office/laptop/laptopFrame3.png" id="7_07d2k"]
 [ext_resource type="Texture2D" uid="uid://mdycedvs0wgs" path="res://assets/img/office/cameras/Cam1A/cam1A.png" id="7_sjdia"]
 [ext_resource type="Texture2D" uid="uid://djmwa5081iyq4" path="res://assets/img/office/laptop/laptopFrame4.png" id="8_gnmmx"]
 [ext_resource type="Texture2D" uid="uid://b3gqk07nukbde" path="res://assets/img/office/laptop/laptopFrame5.png" id="9_jp1e5"]
+[ext_resource type="Texture2D" uid="uid://bqnq7nrtoj00k" path="res://assets/img/office/cameras/Cam1B/cam1BBonnie1.png" id="9_likdn"]
 [ext_resource type="Texture2D" uid="uid://bwyxaqvcog68r" path="res://assets/img/office/laptop/laptopFrame6.png" id="10_kviqm"]
 [ext_resource type="Texture2D" uid="uid://ylbovnt0m4bs" path="res://assets/img/office/laptop/laptopFrame7.png" id="11_ja80a"]
 [ext_resource type="Texture2D" uid="uid://bfeuy41q2y5tt" path="res://assets/img/office/laptop/laptopFrame8.png" id="12_alkg7"]
@@ -42,6 +44,10 @@
 [ext_resource type="Script" uid="uid://c3dv1gxomj7b8" path="res://scripts/office/cameraLogic/cam7.gd" id="29_fsavt"]
 [ext_resource type="AudioStream" uid="uid://dhif31bo4r2ge" path="res://assets/sound/sfx/laptop/CAMERA_VIDEO_LOAD.wav" id="41_0p3hi"]
 [ext_resource type="Texture2D" uid="uid://drfycwbokemcb" path="res://assets/img/office/laptop/laptopButton.png" id="42_bkq84"]
+[ext_resource type="Script" uid="uid://r8cc52afc7p" path="res://scripts/office/animatronics/bonnie.gd" id="44_ak7v7"]
+[ext_resource type="Script" uid="uid://do18u12rigxbo" path="res://scripts/office/animatronics/chica.gd" id="45_likdn"]
+[ext_resource type="Script" uid="uid://dwctafvpkj4c6" path="res://scripts/office/animatronics/freddy.gd" id="46_bv0q3"]
+[ext_resource type="Script" uid="uid://l33fjq7ukme6" path="res://scripts/office/animatronics/foxy.gd" id="47_pjxyp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qphb6"]
 size = Vector2(142, 720)
@@ -164,7 +170,9 @@ shape = SubResource("RectangleShape2D_hub07")
 script = ExtResource("17_kviqm")
 
 [node name="cameraSystem" type="Node2D" parent="camerasNode"]
+visible = false
 position = Vector2(640, 360)
+script = ExtResource("6_osgti")
 
 [node name="Cam1A" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
@@ -173,34 +181,48 @@ visible = false
 texture = ExtResource("7_sjdia")
 
 [node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+visible = false
 
 [node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+visible = false
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+visible = false
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+visible = false
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+visible = false
 
 [node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1A"]
+visible = false
 
 [node name="Cam1B" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
 
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
 texture = ExtResource("18_m4cp1")
 
 [node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
+texture = ExtResource("9_likdn")
 
 [node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
 
 [node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+visible = false
 
 [node name="Cam1C" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
@@ -371,8 +393,6 @@ position = Vector2(640, 360)
 texture = ExtResource("18_kviqm")
 metadata/_edit_lock_ = true
 
-[node name="cam" type="Sprite2D" parent="camerasNode"]
-
 [node name="CameraButtons" type="Node2D" parent="camerasNode"]
 
 [node name="Cam1A" type="Area2D" parent="camerasNode/CameraButtons"]
@@ -482,6 +502,31 @@ stream = ExtResource("41_0p3hi")
 position = Vector2(640, 660)
 texture = ExtResource("42_bkq84")
 
+[node name="AnimatronicsAI" type="Node" parent="."]
+
+[node name="Bonnie" type="Node" parent="AnimatronicsAI"]
+script = ExtResource("44_ak7v7")
+
+[node name="Timer" type="Timer" parent="AnimatronicsAI/Bonnie"]
+
+[node name="Chica" type="Node" parent="AnimatronicsAI"]
+script = ExtResource("45_likdn")
+
+[node name="Timer" type="Timer" parent="AnimatronicsAI/Chica"]
+autostart = true
+
+[node name="Freddy" type="Node" parent="AnimatronicsAI"]
+script = ExtResource("46_bv0q3")
+
+[node name="Timer" type="Timer" parent="AnimatronicsAI/Freddy"]
+autostart = true
+
+[node name="Foxy" type="Node" parent="AnimatronicsAI"]
+script = ExtResource("47_pjxyp")
+
+[node name="Timer" type="Timer" parent="AnimatronicsAI/Foxy"]
+autostart = true
+
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1A" to="camerasNode/CameraButtons/Cam1A" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1B" to="camerasNode/CameraButtons/Cam1B" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1C" to="camerasNode/CameraButtons/Cam1C" method="_on_input_event"]
@@ -493,3 +538,4 @@ texture = ExtResource("42_bkq84")
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam5" to="camerasNode/CameraButtons/Cam5" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam6" to="camerasNode/CameraButtons/Cam6" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam7" to="camerasNode/CameraButtons/Cam7" method="_on_input_event"]
+[connection signal="timeout" from="AnimatronicsAI/Bonnie/Timer" to="AnimatronicsAI/Bonnie" method="_on_timer_timeout"]

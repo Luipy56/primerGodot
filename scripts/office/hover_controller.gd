@@ -14,6 +14,9 @@ const MAX_SPEED := 450.0  # px/s
 const ACCEL_TIME := 1.5   # segundos para alcanzar MAX_SPEED
 var acceleration := MAX_SPEED / ACCEL_TIME
 
+const MAX_LEFT = 480
+const MAX_RIGHT = 800
+
 func _ready() -> void:
 	set_process(false)
 	areaLeft.mouse_entered.connect(func (): 
@@ -48,14 +51,14 @@ func _process(delta: float) -> void:
 
 		if !moveLeftLocked and move_left:
 			sprite.position.x -= current_speed * delta
-			if sprite.position.x < 480: 
+			if sprite.position.x < MAX_LEFT: 
 				moveLeftLocked = true 
 				#print("DER Lockeado")
-				sprite.position.x = 480
+				sprite.position.x = MAX_LEFT
 				
 		elif !moveRightLocked and move_right:
 			sprite.position.x += current_speed * delta
-			if sprite.position.x > 800: 
+			if sprite.position.x > MAX_RIGHT: 
 				moveRightLocked = true 
 				#print("IZQ Lockeado")
-				sprite.position.x = 800
+				sprite.position.x = MAX_RIGHT

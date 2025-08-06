@@ -71,25 +71,5 @@ func _ready() -> void:
 			#continue
 		#normalCamsList.append(textura)
 
-func changeCamera(id):
-	
-	print(id)
-	
-	pass
-	
-func autoMoveCamera():
-	cameraSystem.position.x += 1
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+func changeCamera(id): cameraSystem.changeCamera(id)
 	
