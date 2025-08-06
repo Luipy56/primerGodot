@@ -22,7 +22,7 @@ func _ready():
 	if SaveData.level != 1:
 		continuar = true
 		nightNumber.texture = load("res://assets/img/menu/texts/nights/tn"+str(SaveData.level)+".png")
-		print("He cambiado la textura")
+		#print("He cambiado la textura")
 		
 	continueSprite.visible = continuar
 	night.visible = continuar

@@ -30,11 +30,9 @@ func _process(delta):
 		if _time_accumulator >= move_interval:
 			_time_accumulator = 0.0
 			if position.x+moveDirection < MAX_LEFT:
-				print("Cambio a Izquierda")
 				moveDirection *= -1
 				_waiting = true
 			elif position.x+moveDirection > MAX_RIGHT:
-				print("Cambio a Derecha")
 				moveDirection *= -1
 				_waiting = true 
 			else:
@@ -52,9 +50,11 @@ func stop_animation():
 @onready var currentCamera: Node2D = $Cam1A
 
 func changeCamera(id: String):
+	
+	if currentCamera.name == id: return
+		
 	# Ocultar la camara actual
-	if currentCamera:
-		currentCamera.visible = false
+	if currentCamera: currentCamera.visible = false
 
 	# Obtener la camara a mostrar usando el nombre
 	var camera_to_show = get_node_or_null(id)

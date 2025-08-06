@@ -56,7 +56,7 @@ func _ready() -> void:
 				
 				#Apagar el proceso para mayor eficiecia
 				cameraSystem.set_process(false)
-				print("Apago proceso")
+				#print("Apago proceso")
 	)
 	
 func _open_on_animation_finished() -> void:
@@ -70,7 +70,7 @@ func _open_on_animation_finished() -> void:
 	
 	#Encender el proceso para mayor eficiecia
 	cameraSystem.set_process(true)
-	print("Enciendo proceso")
+	#print("Enciendo proceso")
 	
 	
 func _close_on_animation_finished() -> void:

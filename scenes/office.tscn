@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://dsydns34wpntp"]
+[gd_scene load_steps=67 format=3 uid="uid://dsydns34wpntp"]
 
 [ext_resource type="Script" uid="uid://cryp86thg0yj3" path="res://scripts/office/mainOffice.gd" id="1_3e7dm"]
 [ext_resource type="AudioStream" uid="uid://bckgx8drt0b3u" path="res://assets/sound/music/ambience2.wav" id="2_n0wcf"]
@@ -13,24 +13,36 @@
 [ext_resource type="Texture2D" uid="uid://b3gqk07nukbde" path="res://assets/img/office/laptop/laptopFrame5.png" id="9_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://bqnq7nrtoj00k" path="res://assets/img/office/cameras/Cam1B/cam1BBonnie1.png" id="9_likdn"]
 [ext_resource type="Texture2D" uid="uid://bwyxaqvcog68r" path="res://assets/img/office/laptop/laptopFrame6.png" id="10_kviqm"]
+[ext_resource type="Texture2D" uid="uid://cnryk0kv2mybi" path="res://assets/img/office/cameras/Cam1B/cam1BBonnie2.png" id="10_vilxk"]
+[ext_resource type="Texture2D" uid="uid://ncyylwso8qi" path="res://assets/img/office/cameras/Cam1B/cam1BChica1.png" id="11_12wqr"]
 [ext_resource type="Texture2D" uid="uid://ylbovnt0m4bs" path="res://assets/img/office/laptop/laptopFrame7.png" id="11_ja80a"]
 [ext_resource type="Texture2D" uid="uid://bfeuy41q2y5tt" path="res://assets/img/office/laptop/laptopFrame8.png" id="12_alkg7"]
+[ext_resource type="Texture2D" uid="uid://ckcmtqyce5vpk" path="res://assets/img/office/cameras/Cam1B/cam1BChica2.png" id="12_y13nk"]
 [ext_resource type="Texture2D" uid="uid://fbokhw0kvev2" path="res://assets/img/office/laptop/laptopFrame9.png" id="13_3hjlj"]
+[ext_resource type="Texture2D" uid="uid://dwk8j1250ss6c" path="res://assets/img/office/cameras/Cam1B/cam1BFreddy.png" id="13_wb33o"]
 [ext_resource type="Texture2D" uid="uid://cd0eybebs8voe" path="res://assets/img/office/laptop/laptopFrame10.png" id="14_qg43x"]
 [ext_resource type="Script" uid="uid://bjgjxbhsmyram" path="res://scenes/laptopButton.gd" id="15_k578b"]
 [ext_resource type="AudioStream" uid="uid://6b4o4y2jig71" path="res://assets/sound/sfx/laptop/openLaptop.wav" id="16_07d2k"]
+[ext_resource type="Texture2D" uid="uid://c6pdk7v7ca7yo" path="res://assets/img/office/cameras/Cam2A/cam2ABonnie.png" id="16_wb33o"]
 [ext_resource type="Script" uid="uid://dy32glt5ie8it" path="res://scripts/office/cameraLogic/cameras_node.gd" id="17_kviqm"]
+[ext_resource type="Texture2D" uid="uid://dkmwxyjohcdto" path="res://assets/img/office/cameras/Cam2B/cam2BBonnie1.png" id="18_aqhjm"]
 [ext_resource type="Script" uid="uid://c7cdy87rqay82" path="res://scripts/office/cameraLogic/cam_1a.gd" id="18_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://u1f7nci767em" path="res://assets/img/office/cameras/mainCameras.png" id="18_kviqm"]
 [ext_resource type="Texture2D" uid="uid://c5q5uhq0b7hbg" path="res://assets/img/office/cameras/Cam1B/cam1B.png" id="18_m4cp1"]
+[ext_resource type="Texture2D" uid="uid://c372xkrmaue3" path="res://assets/img/office/cameras/debugCam.png" id="19_bv0q3"]
+[ext_resource type="Texture2D" uid="uid://cpyedeultivfw" path="res://assets/img/office/cameras/Cam2B/cam2BBonnie2.png" id="19_f1ywt"]
+[ext_resource type="Texture2D" uid="uid://qngmjq724oh6" path="res://assets/img/office/cameras/Cam3/cam3Bonnie.png" id="19_qgrek"]
 [ext_resource type="Texture2D" uid="uid://ctkmsfxdswmgt" path="res://assets/img/office/cameras/Cam1C/cam1C.png" id="19_sjdia"]
 [ext_resource type="Texture2D" uid="uid://pvoc0ywhkdun" path="res://assets/img/office/cameras/Cam2A/cam2A.png" id="20_0p3hi"]
 [ext_resource type="Script" uid="uid://dfv10stwr3pdc" path="res://scripts/office/cameraLogic/cam1b.gd" id="20_ja80a"]
 [ext_resource type="Script" uid="uid://dmlunhpk0uvvb" path="res://scripts/office/cameraLogic/cam1c.gd" id="21_alkg7"]
 [ext_resource type="Texture2D" uid="uid://barbsyalju1y8" path="res://assets/img/office/cameras/Cam2B/cam2B.png" id="21_bkq84"]
+[ext_resource type="Texture2D" uid="uid://rbigsjjkjiqq" path="res://assets/img/office/cameras/Cam5/cam5Bonnie1.png" id="21_y13nk"]
 [ext_resource type="Script" uid="uid://d0030mywurug1" path="res://scripts/office/cameraLogic/cam2a.gd" id="22_3hjlj"]
 [ext_resource type="Texture2D" uid="uid://djxi7iegt1bhy" path="res://assets/img/office/cameras/Cam3/cam3.png" id="22_osgti"]
+[ext_resource type="Texture2D" uid="uid://c61nvsx57ut3q" path="res://assets/img/office/cameras/Cam5/cam5Bonnie2.png" id="22_wb33o"]
 [ext_resource type="Texture2D" uid="uid://dw7g80pb2t3bk" path="res://assets/img/office/cameras/Cam4A/cam4A.png" id="23_142py"]
+[ext_resource type="Texture2D" uid="uid://cowh3w72xsqvm" path="res://assets/img/office/cameras/Cam4A/cam4AChica1.png" id="23_f1ywt"]
 [ext_resource type="Script" uid="uid://bdfsk3iosip3g" path="res://scripts/office/cameraLogic/cam2b.gd" id="23_g1ciw"]
 [ext_resource type="Texture2D" uid="uid://tuxuvxr0h301" path="res://assets/img/office/cameras/Cam4B/cam4B.png" id="24_65uj5"]
 [ext_resource type="Script" uid="uid://btjt2sdnhhwaw" path="res://scripts/office/cameraLogic/cam3.gd" id="24_u5glt"]
@@ -174,6 +186,9 @@ visible = false
 position = Vector2(640, 360)
 script = ExtResource("6_osgti")
 
+[node name="DebugCam" type="Sprite2D" parent="camerasNode/cameraSystem"]
+texture = ExtResource("19_bv0q3")
+
 [node name="Cam1A" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
 
@@ -202,27 +217,27 @@ visible = false
 visible = false
 
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
-visible = false
 texture = ExtResource("18_m4cp1")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B" groups=["camsWithBonnieGroup"]]
 visible = false
 texture = ExtResource("9_likdn")
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B" groups=["camsWithBonnieGroup"]]
 visible = false
+texture = ExtResource("10_vilxk")
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
 visible = false
+texture = ExtResource("11_12wqr")
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
 visible = false
+texture = ExtResource("12_y13nk")
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
 visible = false
-
-[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1B"]
-visible = false
+texture = ExtResource("13_wb33o")
 
 [node name="Cam1C" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
@@ -230,17 +245,8 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
 texture = ExtResource("19_sjdia")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
-
-[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
-
-[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
-
-[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
-
-[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+[node name="Foxy1" type="Sprite2D" parent="camerasNode/cameraSystem/Cam1C"]
+visible = false
 
 [node name="Cam2A" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
@@ -248,17 +254,20 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
 texture = ExtResource("20_0p3hi")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A" groups=["camsWithBonnieGroup"]]
+texture = ExtResource("16_wb33o")
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+visible = false
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+visible = false
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+visible = false
 
 [node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
+visible = false
 
 [node name="Cam2B" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
@@ -266,9 +275,11 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
 texture = ExtResource("21_bkq84")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B" groups=["camsWithBonnieGroup"]]
+texture = ExtResource("18_aqhjm")
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B" groups=["camsWithBonnieGroup"]]
+texture = ExtResource("19_f1ywt")
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
 
@@ -284,11 +295,11 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
 texture = ExtResource("22_osgti")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3" groups=["camsWithBonnieGroup"]]
+texture = ExtResource("19_qgrek")
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+visible = false
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
 
@@ -302,11 +313,12 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
 texture = ExtResource("23_142py")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A" groups=["camsWithBonnieGroup"]]
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A" groups=["camsWithBonnieGroup"]]
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+texture = ExtResource("23_f1ywt")
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
 
@@ -320,9 +332,9 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
 texture = ExtResource("24_65uj5")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B" groups=["camsWithBonnieGroup"]]
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B" groups=["camsWithBonnieGroup"]]
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
 
@@ -338,9 +350,11 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
 texture = ExtResource("25_cqgbc")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5" groups=["camsWithBonnieGroup"]]
+texture = ExtResource("21_y13nk")
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5" groups=["camsWithBonnieGroup"]]
+texture = ExtResource("22_wb33o")
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
 
@@ -356,9 +370,9 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
 texture = ExtResource("26_ak7v7")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6" groups=["camsWithBonnieGroup"]]
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6" groups=["camsWithBonnieGroup"]]
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
 
@@ -374,9 +388,9 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
 texture = ExtResource("27_likdn")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7" groups=["camsWithBonnieGroup"]]
 
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7" groups=["camsWithBonnieGroup"]]
 
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
 
