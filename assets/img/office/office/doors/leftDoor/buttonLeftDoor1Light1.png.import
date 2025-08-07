@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0kejrmq4xkca"
-path="res://.godot/imported/cam1BBonnie1.png-374922dc7840f376a024e2bbb2d13431.ctex"
+uid="uid://bxymsaf05eewv"
+path="res://.godot/imported/buttonLeftDoor1Light1.png-7be3c74285e59abdaf64855bce4c8984.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cam1BBonnie1.png"
-dest_files=["res://.godot/imported/cam1BBonnie1.png-374922dc7840f376a024e2bbb2d13431.ctex"]
+source_file="res://assets/img/office/office/doors/leftDoor/buttonLeftDoor1Light1.png"
+dest_files=["res://.godot/imported/buttonLeftDoor1Light1.png-7be3c74285e59abdaf64855bce4c8984.ctex"]
 
 [params]
 

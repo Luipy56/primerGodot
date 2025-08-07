@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var sprite = $"../mainOffice"
+@onready var sprite = $"../Office"
 @onready var areaLeft = $hoverLeft
 @onready var areaRight = $hoverRight
 
@@ -14,8 +14,8 @@ const MAX_SPEED := 450.0  # px/s
 const ACCEL_TIME := 1.5   # segundos para alcanzar MAX_SPEED
 var acceleration := MAX_SPEED / ACCEL_TIME
 
-const MAX_LEFT = 480
-const MAX_RIGHT = 800
+const MAX_LEFT = -160
+const MAX_RIGHT = -MAX_LEFT
 
 func _ready() -> void:
 	set_process(false)
@@ -56,9 +56,11 @@ func _process(delta: float) -> void:
 				#print("DER Lockeado")
 				sprite.position.x = MAX_LEFT
 				
+				
 		elif !moveRightLocked and move_right:
 			sprite.position.x += current_speed * delta
 			if sprite.position.x > MAX_RIGHT: 
 				moveRightLocked = true 
 				#print("IZQ Lockeado")
 				sprite.position.x = MAX_RIGHT
+		#print(sprite.position.x)

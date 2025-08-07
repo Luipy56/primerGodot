@@ -1,65 +1,352 @@
-[gd_scene load_steps=67 format=3 uid="uid://dsydns34wpntp"]
+[gd_scene load_steps=133 format=3 uid="uid://dsydns34wpntp"]
 
 [ext_resource type="Script" uid="uid://cryp86thg0yj3" path="res://scripts/office/mainOffice.gd" id="1_3e7dm"]
 [ext_resource type="AudioStream" uid="uid://bckgx8drt0b3u" path="res://assets/sound/music/ambience2.wav" id="2_n0wcf"]
 [ext_resource type="Script" uid="uid://d3jl1qrpexsb4" path="res://scripts/office/hover_controller.gd" id="3_jwaux"]
-[ext_resource type="Texture2D" uid="uid://pyhejawpsd8q" path="res://assets/img/office/background/mainOffice.png" id="4_7jj4f"]
+[ext_resource type="Texture2D" uid="uid://bqvvtyv7j1pj2" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame0.png" id="4_4yxas"]
+[ext_resource type="Texture2D" uid="uid://pyhejawpsd8q" path="res://assets/img/office/office/mainOffice.png" id="4_7jj4f"]
+[ext_resource type="Script" uid="uid://irgjg5ps38uo" path="res://scripts/office/doorLogic/door_logic.gd" id="4_rcyfd"]
+[ext_resource type="Texture2D" uid="uid://bp5i428rjd04h" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame1.png" id="5_os6x3"]
 [ext_resource type="Texture2D" uid="uid://c45dvp0shgyol" path="res://assets/img/office/laptop/laptopFrame1.png" id="5_ujkv6"]
+[ext_resource type="Texture2D" uid="uid://b28sga165oloo" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame2.png" id="6_3gdh0"]
 [ext_resource type="Texture2D" uid="uid://cd8gilhbl47o5" path="res://assets/img/office/laptop/laptopFrame2.png" id="6_k578b"]
 [ext_resource type="Script" uid="uid://ck48ihxgb2yqn" path="res://scripts/office/cameraLogic/cameraSystem.gd" id="6_osgti"]
+[ext_resource type="Texture2D" uid="uid://da4q5tywb7mp7" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame3.png" id="7_4bak3"]
 [ext_resource type="Texture2D" uid="uid://c87imc5u78k3c" path="res://assets/img/office/laptop/laptopFrame3.png" id="7_07d2k"]
 [ext_resource type="Texture2D" uid="uid://mdycedvs0wgs" path="res://assets/img/office/cameras/Cam1A/cam1A.png" id="7_sjdia"]
 [ext_resource type="Texture2D" uid="uid://djmwa5081iyq4" path="res://assets/img/office/laptop/laptopFrame4.png" id="8_gnmmx"]
+[ext_resource type="Texture2D" uid="uid://c2hrlmbx1r14m" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame4.png" id="8_p5s8i"]
 [ext_resource type="Texture2D" uid="uid://b3gqk07nukbde" path="res://assets/img/office/laptop/laptopFrame5.png" id="9_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://bqnq7nrtoj00k" path="res://assets/img/office/cameras/Cam1B/cam1BBonnie1.png" id="9_likdn"]
+[ext_resource type="Texture2D" uid="uid://bs5wwn843s2i5" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame5.png" id="9_qkc7n"]
 [ext_resource type="Texture2D" uid="uid://bwyxaqvcog68r" path="res://assets/img/office/laptop/laptopFrame6.png" id="10_kviqm"]
+[ext_resource type="Texture2D" uid="uid://b32t5mvpsmqxj" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame6.png" id="10_sedfa"]
 [ext_resource type="Texture2D" uid="uid://cnryk0kv2mybi" path="res://assets/img/office/cameras/Cam1B/cam1BBonnie2.png" id="10_vilxk"]
 [ext_resource type="Texture2D" uid="uid://ncyylwso8qi" path="res://assets/img/office/cameras/Cam1B/cam1BChica1.png" id="11_12wqr"]
 [ext_resource type="Texture2D" uid="uid://ylbovnt0m4bs" path="res://assets/img/office/laptop/laptopFrame7.png" id="11_ja80a"]
+[ext_resource type="Texture2D" uid="uid://2874eer2j73n" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame7.png" id="11_k32yy"]
 [ext_resource type="Texture2D" uid="uid://bfeuy41q2y5tt" path="res://assets/img/office/laptop/laptopFrame8.png" id="12_alkg7"]
+[ext_resource type="Texture2D" uid="uid://d1qpwiyk4evgn" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame8.png" id="12_jig3m"]
 [ext_resource type="Texture2D" uid="uid://ckcmtqyce5vpk" path="res://assets/img/office/cameras/Cam1B/cam1BChica2.png" id="12_y13nk"]
 [ext_resource type="Texture2D" uid="uid://fbokhw0kvev2" path="res://assets/img/office/laptop/laptopFrame9.png" id="13_3hjlj"]
+[ext_resource type="Texture2D" uid="uid://d24sl58plkbbo" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame9.png" id="13_47h6s"]
 [ext_resource type="Texture2D" uid="uid://dwk8j1250ss6c" path="res://assets/img/office/cameras/Cam1B/cam1BFreddy.png" id="13_wb33o"]
+[ext_resource type="Texture2D" uid="uid://dhv2bo5421lyt" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame10.png" id="14_bqedr"]
 [ext_resource type="Texture2D" uid="uid://cd0eybebs8voe" path="res://assets/img/office/laptop/laptopFrame10.png" id="14_qg43x"]
+[ext_resource type="Texture2D" uid="uid://cbbr05kuw6w3j" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame11.png" id="15_h76ue"]
 [ext_resource type="Script" uid="uid://bjgjxbhsmyram" path="res://scenes/laptopButton.gd" id="15_k578b"]
 [ext_resource type="AudioStream" uid="uid://6b4o4y2jig71" path="res://assets/sound/sfx/laptop/openLaptop.wav" id="16_07d2k"]
+[ext_resource type="Texture2D" uid="uid://do8rtyfmgwdgp" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame12.png" id="16_puojg"]
 [ext_resource type="Texture2D" uid="uid://c6pdk7v7ca7yo" path="res://assets/img/office/cameras/Cam2A/cam2ABonnie.png" id="16_wb33o"]
+[ext_resource type="Texture2D" uid="uid://duts2b6gg4si8" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame13.png" id="17_3vx4u"]
 [ext_resource type="Script" uid="uid://dy32glt5ie8it" path="res://scripts/office/cameraLogic/cameras_node.gd" id="17_kviqm"]
 [ext_resource type="Texture2D" uid="uid://dkmwxyjohcdto" path="res://assets/img/office/cameras/Cam2B/cam2BBonnie1.png" id="18_aqhjm"]
 [ext_resource type="Script" uid="uid://c7cdy87rqay82" path="res://scripts/office/cameraLogic/cam_1a.gd" id="18_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://u1f7nci767em" path="res://assets/img/office/cameras/mainCameras.png" id="18_kviqm"]
 [ext_resource type="Texture2D" uid="uid://c5q5uhq0b7hbg" path="res://assets/img/office/cameras/Cam1B/cam1B.png" id="18_m4cp1"]
+[ext_resource type="Texture2D" uid="uid://dvka3eg5uqsnu" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame14.png" id="18_v6rod"]
 [ext_resource type="Texture2D" uid="uid://c372xkrmaue3" path="res://assets/img/office/cameras/debugCam.png" id="19_bv0q3"]
 [ext_resource type="Texture2D" uid="uid://cpyedeultivfw" path="res://assets/img/office/cameras/Cam2B/cam2BBonnie2.png" id="19_f1ywt"]
+[ext_resource type="Texture2D" uid="uid://b0fpruhc8xkcg" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame0.png" id="19_mbyad"]
 [ext_resource type="Texture2D" uid="uid://qngmjq724oh6" path="res://assets/img/office/cameras/Cam3/cam3Bonnie.png" id="19_qgrek"]
 [ext_resource type="Texture2D" uid="uid://ctkmsfxdswmgt" path="res://assets/img/office/cameras/Cam1C/cam1C.png" id="19_sjdia"]
 [ext_resource type="Texture2D" uid="uid://pvoc0ywhkdun" path="res://assets/img/office/cameras/Cam2A/cam2A.png" id="20_0p3hi"]
 [ext_resource type="Script" uid="uid://dfv10stwr3pdc" path="res://scripts/office/cameraLogic/cam1b.gd" id="20_ja80a"]
+[ext_resource type="Texture2D" uid="uid://c8amrl6847npx" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame1.png" id="20_rcyfd"]
+[ext_resource type="Texture2D" uid="uid://c3uiv626qyrxe" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame2.png" id="21_875dy"]
 [ext_resource type="Script" uid="uid://dmlunhpk0uvvb" path="res://scripts/office/cameraLogic/cam1c.gd" id="21_alkg7"]
 [ext_resource type="Texture2D" uid="uid://barbsyalju1y8" path="res://assets/img/office/cameras/Cam2B/cam2B.png" id="21_bkq84"]
 [ext_resource type="Texture2D" uid="uid://rbigsjjkjiqq" path="res://assets/img/office/cameras/Cam5/cam5Bonnie1.png" id="21_y13nk"]
 [ext_resource type="Script" uid="uid://d0030mywurug1" path="res://scripts/office/cameraLogic/cam2a.gd" id="22_3hjlj"]
+[ext_resource type="Texture2D" uid="uid://c25o5fmxxpc0c" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame3.png" id="22_dpic4"]
 [ext_resource type="Texture2D" uid="uid://djxi7iegt1bhy" path="res://assets/img/office/cameras/Cam3/cam3.png" id="22_osgti"]
 [ext_resource type="Texture2D" uid="uid://c61nvsx57ut3q" path="res://assets/img/office/cameras/Cam5/cam5Bonnie2.png" id="22_wb33o"]
 [ext_resource type="Texture2D" uid="uid://dw7g80pb2t3bk" path="res://assets/img/office/cameras/Cam4A/cam4A.png" id="23_142py"]
 [ext_resource type="Texture2D" uid="uid://cowh3w72xsqvm" path="res://assets/img/office/cameras/Cam4A/cam4AChica1.png" id="23_f1ywt"]
 [ext_resource type="Script" uid="uid://bdfsk3iosip3g" path="res://scripts/office/cameraLogic/cam2b.gd" id="23_g1ciw"]
+[ext_resource type="Texture2D" uid="uid://dkmbm704ullgu" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame4.png" id="23_w5bdp"]
 [ext_resource type="Texture2D" uid="uid://tuxuvxr0h301" path="res://assets/img/office/cameras/Cam4B/cam4B.png" id="24_65uj5"]
+[ext_resource type="Texture2D" uid="uid://1yyler56moub" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame5.png" id="24_d352y"]
 [ext_resource type="Script" uid="uid://btjt2sdnhhwaw" path="res://scripts/office/cameraLogic/cam3.gd" id="24_u5glt"]
+[ext_resource type="Texture2D" uid="uid://b3m4xvqlbaaio" path="res://assets/img/office/cameras/Cam4A/cam4AChica2.png" id="25_2v03r"]
+[ext_resource type="Texture2D" uid="uid://r5a1lpuagcpa" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame6.png" id="25_3olkc"]
 [ext_resource type="Script" uid="uid://dnd4efga1qnge" path="res://scripts/office/cameraLogic/cam4a.gd" id="25_3u7yi"]
 [ext_resource type="Texture2D" uid="uid://cnftg3pfnnkq6" path="res://assets/img/office/cameras/Cam5/cam5.png" id="25_cqgbc"]
+[ext_resource type="Texture2D" uid="uid://byl1cwdqur2my" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame7.png" id="26_4hkba"]
 [ext_resource type="Texture2D" uid="uid://d3t0fgjut3ti5" path="res://assets/img/office/cameras/Cam6/cam6.png" id="26_ak7v7"]
 [ext_resource type="Script" uid="uid://oqugttsnyaln" path="res://scripts/office/cameraLogic/cam4b.gd" id="26_eet0l"]
 [ext_resource type="Script" uid="uid://g6xot8uwi1nw" path="res://scripts/office/cameraLogic/cam5.gd" id="27_42gc7"]
+[ext_resource type="Texture2D" uid="uid://b72akf2jwscrf" path="res://assets/img/office/cameras/Cam4B/cam4BChica1.png" id="27_73m2f"]
 [ext_resource type="Texture2D" uid="uid://b0kx4aciix5iq" path="res://assets/img/office/cameras/Cam7/cam7.png" id="27_likdn"]
+[ext_resource type="Texture2D" uid="uid://n5kuj63mo1vs" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame8.png" id="27_soevi"]
 [ext_resource type="Script" uid="uid://5iwin7t4b0uk" path="res://scripts/office/cameraLogic/cam6.gd" id="28_gf52q"]
+[ext_resource type="Texture2D" uid="uid://cg2f2dhtbpeoi" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame9.png" id="28_ktwjf"]
+[ext_resource type="Texture2D" uid="uid://dwqbokonqiyij" path="res://assets/img/office/cameras/Cam4B/cam4BChica2.png" id="28_qakv3"]
+[ext_resource type="Texture2D" uid="uid://lcnujkpkvrhg" path="res://assets/img/office/cameras/Cam4B/cam4BChica3.png" id="29_c12kp"]
 [ext_resource type="Script" uid="uid://c3dv1gxomj7b8" path="res://scripts/office/cameraLogic/cam7.gd" id="29_fsavt"]
+[ext_resource type="Texture2D" uid="uid://bh84si7gsuove" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame10.png" id="29_tg1gr"]
+[ext_resource type="Texture2D" uid="uid://dybycspgmhidt" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame11.png" id="30_ldsnd"]
+[ext_resource type="Texture2D" uid="uid://d1bvu8e68i7je" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame12.png" id="31_m66co"]
+[ext_resource type="Texture2D" uid="uid://bbkysihium2wr" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame13.png" id="32_n6omg"]
+[ext_resource type="Texture2D" uid="uid://bgqqbl5vjphev" path="res://assets/img/office/office/doors/rightDoor/rightDoorFrame14.png" id="33_wy5dh"]
+[ext_resource type="Texture2D" uid="uid://daio0u12eay1c" path="res://assets/img/office/office/doors/leftDoor/buttonLeftDoor0Light0.png" id="35_4hkba"]
+[ext_resource type="AudioStream" uid="uid://bw25l6udc41f6" path="res://assets/sound/sfx/doors/openDoor.wav" id="35_875dy"]
+[ext_resource type="Texture2D" uid="uid://b64hxfrs6c5qd" path="res://assets/img/office/cameras/Cam7/cam7Chica1.png" id="35_dwir6"]
+[ext_resource type="AudioStream" uid="uid://bovbkut2ojdq3" path="res://assets/sound/sfx/doors/lightSound.wav" id="36_dpic4"]
+[ext_resource type="Texture2D" uid="uid://dnu4xbr56ab1x" path="res://assets/img/office/cameras/Cam7/cam7Chica2.png" id="36_sesf4"]
+[ext_resource type="Texture2D" uid="uid://bgjsqtrvi5xvb" path="res://assets/img/office/office/doors/leftDoor/buttonLeftDoor0Light1.png" id="36_soevi"]
+[ext_resource type="Texture2D" uid="uid://dxr1higg1udqd" path="res://assets/img/office/office/doors/leftDoor/buttonLeftDoor1Light0.png" id="37_ktwjf"]
+[ext_resource type="Texture2D" uid="uid://bxymsaf05eewv" path="res://assets/img/office/office/doors/leftDoor/buttonLeftDoor1Light1.png" id="38_tg1gr"]
+[ext_resource type="Texture2D" uid="uid://dex82sdnb4hi5" path="res://assets/img/office/office/doors/rightDoor/buttonRightDoor0Light0.png" id="39_ldsnd"]
+[ext_resource type="Texture2D" uid="uid://c5hhgvdipoako" path="res://assets/img/office/office/doors/rightDoor/buttonRightDoor0Light1.png" id="40_m66co"]
 [ext_resource type="AudioStream" uid="uid://dhif31bo4r2ge" path="res://assets/sound/sfx/laptop/CAMERA_VIDEO_LOAD.wav" id="41_0p3hi"]
+[ext_resource type="Texture2D" uid="uid://c5atgmqo27gu4" path="res://assets/img/office/office/doors/rightDoor/buttonRightDoor1Light0.png" id="41_n6omg"]
 [ext_resource type="Texture2D" uid="uid://drfycwbokemcb" path="res://assets/img/office/laptop/laptopButton.png" id="42_bkq84"]
+[ext_resource type="Texture2D" uid="uid://bk1gw0flg4uso" path="res://assets/img/office/office/doors/rightDoor/buttonRightDoor1Light1.png" id="42_wy5dh"]
 [ext_resource type="Script" uid="uid://r8cc52afc7p" path="res://scripts/office/animatronics/bonnie.gd" id="44_ak7v7"]
 [ext_resource type="Script" uid="uid://do18u12rigxbo" path="res://scripts/office/animatronics/chica.gd" id="45_likdn"]
 [ext_resource type="Script" uid="uid://dwctafvpkj4c6" path="res://scripts/office/animatronics/freddy.gd" id="46_bv0q3"]
 [ext_resource type="Script" uid="uid://l33fjq7ukme6" path="res://scripts/office/animatronics/foxy.gd" id="47_pjxyp"]
+[ext_resource type="Texture2D" uid="uid://qt4h2ty3ynt3" path="res://assets/img/office/cameras/TransitionLines/transitionLines1.png" id="63_wx8ly"]
+[ext_resource type="Texture2D" uid="uid://bk8ugr3j3bagk" path="res://assets/img/office/cameras/TransitionLines/transitionLines2.png" id="64_dqvlh"]
+[ext_resource type="Texture2D" uid="uid://b72cuqwtgwe5x" path="res://assets/img/office/cameras/TransitionLines/transitionLines3.png" id="65_1d6ln"]
+[ext_resource type="Texture2D" uid="uid://dp72uw4uhnimx" path="res://assets/img/office/cameras/TransitionLines/transitionLines4.png" id="66_xbmoe"]
+[ext_resource type="Texture2D" uid="uid://bl2mk0nei7plg" path="res://assets/img/office/cameras/TransitionLines/transitionLines5.png" id="67_gogr1"]
+[ext_resource type="Texture2D" uid="uid://bnua7hi2xfqlx" path="res://assets/img/office/cameras/TransitionLines/transitionLines6.png" id="68_ld7wk"]
+[ext_resource type="AudioStream" uid="uid://jiwi4bvsymjs" path="res://assets/sound/sfx/laptop/blip3.wav" id="69_dqvlh"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f1ywt"]
+load_path = "res://.godot/imported/officeLeftLightBonnie.png-cb98eaa2b0b4337574c7f4d233b8e01e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f3wdx"]
+load_path = "res://.godot/imported/officeLeftLight.png-58e8222ac095b06abcd2ed5d3e58210a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_trbo1"]
+load_path = "res://.godot/imported/officeRightLight.png-85201e12d4cc12af7669c1fef0e4725b.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dqvlh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4yxas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_os6x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3gdh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4bak3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_p5s8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qkc7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sedfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k32yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jig3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_47h6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bqedr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h76ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_puojg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3vx4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_v6rod")
+}],
+"loop": false,
+"name": &"default",
+"speed": 50.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_875dy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_v6rod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3vx4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_puojg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h76ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bqedr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_47h6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jig3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k32yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sedfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qkc7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_p5s8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4bak3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3gdh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_os6x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4yxas")
+}],
+"loop": false,
+"name": &"default",
+"speed": 50.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j877l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_mbyad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rcyfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_875dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_dpic4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_w5bdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d352y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3olkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4hkba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_soevi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ktwjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tg1gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ldsnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_m66co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_n6omg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_wy5dh")
+}],
+"loop": false,
+"name": &"default",
+"speed": 50.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dpic4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_wy5dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_n6omg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_m66co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ldsnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tg1gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ktwjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_soevi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4hkba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3olkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d352y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_w5bdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_dpic4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_875dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rcyfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mbyad")
+}],
+"loop": false,
+"name": &"default",
+"speed": 50.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_875dy"]
+size = Vector2(64, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcyfd"]
+size = Vector2(67, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j877l"]
+size = Vector2(65, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w5bdp"]
+size = Vector2(65, 74)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qphb6"]
 size = Vector2(142, 720)
@@ -149,6 +436,32 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07d2k"]
 size = Vector2(593, 45)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_5uk4i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("63_wx8ly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_dqvlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_1d6ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_xbmoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_gogr1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_ld7wk")
+}],
+"loop": false,
+"name": &"default",
+"speed": 16.0
+}]
+
 [node name="Office" type="Node2D"]
 script = ExtResource("1_3e7dm")
 metadata/_edit_lock_ = true
@@ -158,10 +471,130 @@ stream = ExtResource("2_n0wcf")
 volume_db = 4.0
 autoplay = true
 
-[node name="mainOffice" type="Sprite2D" parent="."]
+[node name="Office" type="Node2D" parent="."]
+
+[node name="mainOffice" type="Sprite2D" parent="Office"]
 position = Vector2(640, 360)
 texture = ExtResource("4_7jj4f")
 metadata/_edit_lock_ = true
+
+[node name="bonnieLight" type="Sprite2D" parent="Office"]
+visible = false
+position = Vector2(640, 360)
+texture = SubResource("CompressedTexture2D_f1ywt")
+
+[node name="leftLight" type="Sprite2D" parent="Office"]
+visible = false
+position = Vector2(640, 360)
+texture = SubResource("CompressedTexture2D_f3wdx")
+
+[node name="rightLight" type="Sprite2D" parent="Office"]
+visible = false
+position = Vector2(640, 360)
+texture = SubResource("CompressedTexture2D_trbo1")
+
+[node name="doorLogic" type="Node2D" parent="Office"]
+script = ExtResource("4_rcyfd")
+
+[node name="leftDoorClose" type="AnimatedSprite2D" parent="Office/doorLogic"]
+position = Vector2(-87, 0)
+sprite_frames = SubResource("SpriteFrames_dqvlh")
+centered = false
+
+[node name="leftDoorOpen" type="AnimatedSprite2D" parent="Office/doorLogic"]
+visible = false
+position = Vector2(-87, 0)
+sprite_frames = SubResource("SpriteFrames_875dy")
+centered = false
+
+[node name="rightDoorClose" type="AnimatedSprite2D" parent="Office/doorLogic"]
+position = Vector2(1103, 0)
+sprite_frames = SubResource("SpriteFrames_j877l")
+centered = false
+
+[node name="rightDoorOpen" type="AnimatedSprite2D" parent="Office/doorLogic"]
+visible = false
+position = Vector2(1103, 0)
+sprite_frames = SubResource("SpriteFrames_dpic4")
+centered = false
+
+[node name="leftDoorLightButton" type="Area2D" parent="Office/doorLogic"]
+
+[node name="leftDoorLightButton" type="CollisionShape2D" parent="Office/doorLogic/leftDoorLightButton"]
+position = Vector2(-120, 399)
+shape = SubResource("RectangleShape2D_875dy")
+
+[node name="leftDoorCloseButton" type="Area2D" parent="Office/doorLogic"]
+
+[node name="leftDoorCloseButton" type="CollisionShape2D" parent="Office/doorLogic/leftDoorCloseButton"]
+position = Vector2(-120.5, 313)
+shape = SubResource("RectangleShape2D_rcyfd")
+
+[node name="leftButtons" type="Node2D" parent="Office/doorLogic/leftDoorCloseButton"]
+
+[node name="b00" type="Sprite2D" parent="Office/doorLogic/leftDoorCloseButton/leftButtons"]
+position = Vector2(-124, 360)
+texture = ExtResource("35_4hkba")
+
+[node name="b01" type="Sprite2D" parent="Office/doorLogic/leftDoorCloseButton/leftButtons"]
+visible = false
+position = Vector2(-124, 360)
+texture = ExtResource("36_soevi")
+
+[node name="b10" type="Sprite2D" parent="Office/doorLogic/leftDoorCloseButton/leftButtons"]
+visible = false
+position = Vector2(-124, 360)
+texture = ExtResource("37_ktwjf")
+
+[node name="b11" type="Sprite2D" parent="Office/doorLogic/leftDoorCloseButton/leftButtons"]
+visible = false
+position = Vector2(-124, 360)
+texture = ExtResource("38_tg1gr")
+
+[node name="rightDoorLightButton" type="Area2D" parent="Office/doorLogic"]
+
+[node name="rightDoorLightButton" type="CollisionShape2D" parent="Office/doorLogic/rightDoorLightButton"]
+position = Vector2(1387.5, 400)
+shape = SubResource("RectangleShape2D_j877l")
+
+[node name="rightDoorCloseButton" type="Area2D" parent="Office/doorLogic"]
+position = Vector2(-1, 0)
+
+[node name="rightDoorCloseButton" type="CollisionShape2D" parent="Office/doorLogic/rightDoorCloseButton"]
+position = Vector2(1388.5, 316)
+shape = SubResource("RectangleShape2D_w5bdp")
+
+[node name="rightButtons" type="Node2D" parent="Office/doorLogic/rightDoorCloseButton"]
+
+[node name="b00" type="Sprite2D" parent="Office/doorLogic/rightDoorCloseButton/rightButtons"]
+position = Vector2(1388, 360)
+texture = ExtResource("39_ldsnd")
+
+[node name="b01" type="Sprite2D" parent="Office/doorLogic/rightDoorCloseButton/rightButtons"]
+visible = false
+position = Vector2(1388, 360)
+texture = ExtResource("40_m66co")
+
+[node name="b10" type="Sprite2D" parent="Office/doorLogic/rightDoorCloseButton/rightButtons"]
+visible = false
+position = Vector2(1388, 360)
+texture = ExtResource("41_n6omg")
+
+[node name="b11" type="Sprite2D" parent="Office/doorLogic/rightDoorCloseButton/rightButtons"]
+visible = false
+position = Vector2(1388, 360)
+texture = ExtResource("42_wy5dh")
+
+[node name="leftTimer" type="Timer" parent="Office/doorLogic"]
+wait_time = 0.2
+
+[node name="openDoor" type="AudioStreamPlayer" parent="Office/doorLogic"]
+stream = ExtResource("35_875dy")
+
+[node name="lightDoor" type="AudioStreamPlayer" parent="Office/doorLogic"]
+stream = ExtResource("36_dpic4")
+
+[node name="rightTimer" type="Timer" parent="Office/doorLogic"]
 
 [node name="hoverController" type="Node2D" parent="."]
 script = ExtResource("3_jwaux")
@@ -255,13 +688,8 @@ visible = false
 texture = ExtResource("20_0p3hi")
 
 [node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A" groups=["camsWithBonnieGroup"]]
+visible = false
 texture = ExtResource("16_wb33o")
-
-[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
-visible = false
-
-[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
-visible = false
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2A"]
 visible = false
@@ -276,14 +704,12 @@ visible = false
 texture = ExtResource("21_bkq84")
 
 [node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B" groups=["camsWithBonnieGroup"]]
+visible = false
 texture = ExtResource("18_aqhjm")
 
 [node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B" groups=["camsWithBonnieGroup"]]
+visible = false
 texture = ExtResource("19_f1ywt")
-
-[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
-
-[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam2B"]
 
@@ -296,12 +722,8 @@ visible = false
 texture = ExtResource("22_osgti")
 
 [node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3" groups=["camsWithBonnieGroup"]]
-texture = ExtResource("19_qgrek")
-
-[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
 visible = false
-
-[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
+texture = ExtResource("19_qgrek")
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam3"]
 
@@ -313,14 +735,13 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
 texture = ExtResource("23_142py")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A" groups=["camsWithBonnieGroup"]]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A" groups=["camsWithBonnieGroup"]]
-
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+visible = false
 texture = ExtResource("23_f1ywt")
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
+visible = false
+texture = ExtResource("25_2v03r")
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4A"]
 
@@ -332,13 +753,16 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
 texture = ExtResource("24_65uj5")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B" groups=["camsWithBonnieGroup"]]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B" groups=["camsWithBonnieGroup"]]
-
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+visible = false
+texture = ExtResource("27_73m2f")
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+visible = false
+texture = ExtResource("28_qakv3")
+
+[node name="Chica3" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+texture = ExtResource("29_c12kp")
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
 
@@ -351,18 +775,12 @@ visible = false
 texture = ExtResource("25_cqgbc")
 
 [node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5" groups=["camsWithBonnieGroup"]]
+visible = false
 texture = ExtResource("21_y13nk")
 
 [node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5" groups=["camsWithBonnieGroup"]]
+visible = false
 texture = ExtResource("22_wb33o")
-
-[node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
-
-[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
-
-[node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
-
-[node name="Foxy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam5"]
 
 [node name="Cam6" type="Node2D" parent="camerasNode/cameraSystem"]
 visible = false
@@ -370,13 +788,8 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
 texture = ExtResource("26_ak7v7")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6" groups=["camsWithBonnieGroup"]]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6" groups=["camsWithBonnieGroup"]]
-
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
-
-[node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
+visible = false
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam6"]
 
@@ -388,13 +801,13 @@ visible = false
 [node name="Background" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
 texture = ExtResource("27_likdn")
 
-[node name="Bonnie" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7" groups=["camsWithBonnieGroup"]]
-
-[node name="Bonnie2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7" groups=["camsWithBonnieGroup"]]
-
 [node name="Chica" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+visible = false
+texture = ExtResource("35_dwir6")
 
 [node name="Chica2" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
+visible = false
+texture = ExtResource("36_sesf4")
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam7"]
 
@@ -516,6 +929,16 @@ stream = ExtResource("41_0p3hi")
 position = Vector2(640, 660)
 texture = ExtResource("42_bkq84")
 
+[node name="transitionLines" type="AnimatedSprite2D" parent="camerasNode"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_5uk4i")
+frame = 2
+frame_progress = 0.723067
+centered = false
+
+[node name="transitionLinesSound" type="AudioStreamPlayer" parent="camerasNode"]
+stream = ExtResource("69_dqvlh")
+
 [node name="AnimatronicsAI" type="Node" parent="."]
 
 [node name="Bonnie" type="Node" parent="AnimatronicsAI"]
@@ -541,6 +964,12 @@ script = ExtResource("47_pjxyp")
 [node name="Timer" type="Timer" parent="AnimatronicsAI/Foxy"]
 autostart = true
 
+[connection signal="input_event" from="Office/doorLogic/leftDoorLightButton" to="Office/doorLogic" method="_on_left_door_light_button_input_event"]
+[connection signal="input_event" from="Office/doorLogic/leftDoorCloseButton" to="Office/doorLogic" method="_on_left_door_close_button_input_event"]
+[connection signal="input_event" from="Office/doorLogic/rightDoorLightButton" to="Office/doorLogic" method="_on_right_door_light_button_input_event"]
+[connection signal="input_event" from="Office/doorLogic/rightDoorCloseButton" to="Office/doorLogic" method="_on_right_door_close_button_input_event"]
+[connection signal="timeout" from="Office/doorLogic/leftTimer" to="Office/doorLogic" method="_on_leftTimer_timeout"]
+[connection signal="timeout" from="Office/doorLogic/rightTimer" to="Office/doorLogic" method="_on_right_timer_timeout"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1A" to="camerasNode/CameraButtons/Cam1A" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1B" to="camerasNode/CameraButtons/Cam1B" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1C" to="camerasNode/CameraButtons/Cam1C" method="_on_input_event"]
@@ -553,3 +982,4 @@ autostart = true
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam6" to="camerasNode/CameraButtons/Cam6" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam7" to="camerasNode/CameraButtons/Cam7" method="_on_input_event"]
 [connection signal="timeout" from="AnimatronicsAI/Bonnie/Timer" to="AnimatronicsAI/Bonnie" method="_on_timer_timeout"]
+[connection signal="timeout" from="AnimatronicsAI/Chica/Timer" to="AnimatronicsAI/Chica" method="_on_timer_timeout"]

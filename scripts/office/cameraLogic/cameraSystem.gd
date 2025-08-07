@@ -12,12 +12,19 @@ var moveDirection := -1
 var _wait_timer := 0.0
 var _waiting := false
 
+func _ready() -> void:
+	#transition_lines.visible = false
+	transition_lines.animation_finished.connect(_open_on_animation_finished)
+	
+
+
 func _process(delta):
 	#print("S")
 	#if not visible:
 	##if not visible or not _active:
 		#return
 	#region Movimiento de la camara
+	
 	if _waiting:
 		_wait_timer += delta
 		if _wait_timer >= wait_duration:
@@ -38,7 +45,6 @@ func _process(delta):
 			else:
 				position.x += moveDirection
 	#endregion
-	
 
 func start_animation():
 	_active = true
@@ -49,21 +55,49 @@ func stop_animation():
 	
 @onready var currentCamera: Node2D = $Cam1A
 
+@onready var transition_lines: AnimatedSprite2D = $"../transitionLines"
+@onready var transition_lines_sound: AudioStreamPlayer = $"../transitionLinesSound"
+
+
 func changeCamera(id: String):
-	
 	if currentCamera.name == id: return
+	
+	#Animacion transicion y sonido
+	transition_lines.visible = true
+	transition_lines.play()
+	transition_lines_sound.play()
 		
 	# Ocultar la camara actual
 	if currentCamera: currentCamera.visible = false
 
 	# Obtener la camara a mostrar usando el nombre
 	var camera_to_show = get_node_or_null(id)
-	if camera_to_show and camera_to_show is CanvasItem:
+	if camera_to_show:
+	#if camera_to_show and camera_to_show is CanvasItem:
 		camera_to_show.visible = true
 		currentCamera = camera_to_show
 	else:
 		push_error("No se encontro la camara: " + id)
 
+#func activateAnimatronicCamera(array_base: Array, index: int, animActualCam: Node)-> void:
+	#animActualCam.visible = false
+	#
+	#var opciones = array_base[index]
+	#var seleccionado = opciones[randi() % opciones.size()] if opciones is Array else opciones
+	#seleccionado.visible = true
+	#print(seleccionado)
+	#animActualCam = seleccionado
+	
+func activateAnimatronicCamera(array_base: Array, index: int) -> Node:
+	var opciones = array_base[index]
+	var seleccionado = opciones[randi() % opciones.size()] if opciones is Array else opciones
+	seleccionado.visible = true
+	#print(seleccionado)
+	return seleccionado
+
+func _open_on_animation_finished():
+	transition_lines.visible = false
+	
 
 
 

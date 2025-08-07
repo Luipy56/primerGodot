@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pyhejawpsd8q"
-path="res://.godot/imported/mainOffice.png-179e23c13abf02a3ac1918665a29d054.ctex"
+uid="uid://bqvvtyv7j1pj2"
+path="res://.godot/imported/leftDoorFrame0.png-520fb7fd95deef57a91bd346a3636390.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/office/background/mainOffice.png"
-dest_files=["res://.godot/imported/mainOffice.png-179e23c13abf02a3ac1918665a29d054.ctex"]
+source_file="res://assets/img/office/office/doors/leftDoor/leftDoorFrame0.png"
+dest_files=["res://.godot/imported/leftDoorFrame0.png-520fb7fd95deef57a91bd346a3636390.ctex"]
 
 [params]
 
