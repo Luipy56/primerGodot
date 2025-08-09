@@ -31,66 +31,54 @@ func _ready():
 	NightStats.bonnieActualCam = $"../../camerasNode/cameraSystem/DebugCam" 
 	timer.wait_time = NightStats.bonnieWaitTime
 	timer.start()
-
+	
+@onready var left_light_node: Sprite2D = $"../../Office/leftLight"
+var leftLightBonnie := load("res://assets/img/office/office/officeLeftLightBonnie.png")
+var leftLight := load("res://assets/img/office/office/officeLeftLight.png")
 var randLocal := 1
+
+
 func _on_timer_timeout() -> void:
 	if NightStats.bonnieIsAttacking:
 		#Si se defiende a bonnie
 		if NightStats.leftDoorClosed:
-			#print("Reinicio posicion")
 			NightStats.bonnieIsAttacking = false
 			NightStats.bonniePosition = 1
 			NightStats.bonnieActualCam.visible = false
-			NightStats.bonnieActualCam = $"../../camerasNode/cameraSystem".activateAnimatronicCamera(camsWithBonnie,NightStats.bonniePosition-1)
+		
+			left_light_node.texture = leftLight
 		else:
 			#Bonnie debe de atacar
 			#ejecutarJumpscare()
-			pass
+			timer.stop()#TODO
+			$BonnieJumpscare.startBonnieJumpscare()
 		return
 
 	rand = randi() % 20
 	if rand < NightStats.bonnieAI:
-		#Bonnie debe de actualziar su posicion
-		
-		#50% de que se sume otro si posicion 2
-		#if NightStats.bonniePosition == 2: NightStats.bonniePosition += randi() % 2
-		#NightStats.bonniePosition += 1
-		
 		randLocal = 1
 		if not (NightStats.bonniePosition in [0, 1, 5]):
 			randLocal = -1 if (randi() % 100) < 20 else 1
 		NightStats.bonniePosition += randLocal
-
+		$"../../camerasNode".transitionLines()
+		
+		#Efecto de sonido
+		if randi() % 4 == 1:
+			if not $Circus.playing:
+				$Circus.play()
+		if not $BonnieSteps.playing:
+			$BonnieSteps.play()
 
 		
-		#Ocultamos todas la camaras donde podria estar actualmente # Pasar a ACTUAL CAM y Esconderla, dios es super facil porq haces esto asi? lol
-		#get_tree().call_group("camsWithBonnieGroup", "set", "visible", false)
 		
-
-		#if NightStats.bonniePosition >= 1:
-			#PARA OTRO SCRIPT si cualquier IA != 0 esconder background
-			#Añadir sprite de error
-			#camsWithBonnie[NightStats.bonniePosition+1].visible = true #TODO PONER DIRECTAMENTE EL position?? -1 Random choice
-			
-		#var camarasPosibles = camsWithBonnie[NightStats.bonniePosition-1]
-		#var tmp = camarasPosibles[randi() % camarasPosibles.size()] if camarasPosibles is Array else camarasPosibles
-		#print(tmp)
-		#tmp.visible = true
+		
 		NightStats.bonnieActualCam.visible = false
-		NightStats.bonnieActualCam = $"../../camerasNode/cameraSystem".activateAnimatronicCamera(camsWithBonnie, NightStats.bonniePosition - 1)
-
-		
-			#timer.stop()
 		
 		#Cuando atacar
 		if NightStats.bonniePosition == NightStats.bonnieMaxPosition-1:
-			#timer.stop()
-			#print("Detenido Bonnie")
-			#print("Bonnie En Puerta")
 			NightStats.bonnieIsAttacking = true
-			#NightStats.bonnieActualCam.visible = false
+			left_light_node.texture = leftLightBonnie
+		else:
+			NightStats.bonnieActualCam = $"../../camerasNode/cameraSystem".activateAnimatronicCamera(camsWithBonnie, NightStats.bonniePosition - 1)
+
 			
-		
-		#currentBonnieCamPosition =  
-		
-		#TODO if position = puerta

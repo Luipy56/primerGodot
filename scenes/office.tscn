@@ -1,21 +1,26 @@
-[gd_scene load_steps=133 format=3 uid="uid://dsydns34wpntp"]
+[gd_scene load_steps=158 format=3 uid="uid://dsydns34wpntp"]
 
 [ext_resource type="Script" uid="uid://cryp86thg0yj3" path="res://scripts/office/mainOffice.gd" id="1_3e7dm"]
 [ext_resource type="AudioStream" uid="uid://bckgx8drt0b3u" path="res://assets/sound/music/ambience2.wav" id="2_n0wcf"]
 [ext_resource type="Script" uid="uid://d3jl1qrpexsb4" path="res://scripts/office/hover_controller.gd" id="3_jwaux"]
+[ext_resource type="AudioStream" uid="uid://dysaauwhlc5pn" path="res://assets/sound/music/darkAmbient.wav" id="3_m66co"]
 [ext_resource type="Texture2D" uid="uid://bqvvtyv7j1pj2" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame0.png" id="4_4yxas"]
 [ext_resource type="Texture2D" uid="uid://pyhejawpsd8q" path="res://assets/img/office/office/mainOffice.png" id="4_7jj4f"]
+[ext_resource type="AudioStream" uid="uid://v5l6bacjbpjc" path="res://assets/sound/music/fanFluor.wav" id="4_n6omg"]
 [ext_resource type="Script" uid="uid://irgjg5ps38uo" path="res://scripts/office/doorLogic/door_logic.gd" id="4_rcyfd"]
 [ext_resource type="Texture2D" uid="uid://bp5i428rjd04h" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame1.png" id="5_os6x3"]
 [ext_resource type="Texture2D" uid="uid://c45dvp0shgyol" path="res://assets/img/office/laptop/laptopFrame1.png" id="5_ujkv6"]
 [ext_resource type="Texture2D" uid="uid://b28sga165oloo" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame2.png" id="6_3gdh0"]
+[ext_resource type="Texture2D" uid="uid://8gvm3wybsbij" path="res://assets/img/office/office/fan/fanFrame1.png" id="6_13dvw"]
 [ext_resource type="Texture2D" uid="uid://cd8gilhbl47o5" path="res://assets/img/office/laptop/laptopFrame2.png" id="6_k578b"]
 [ext_resource type="Script" uid="uid://ck48ihxgb2yqn" path="res://scripts/office/cameraLogic/cameraSystem.gd" id="6_osgti"]
 [ext_resource type="Texture2D" uid="uid://da4q5tywb7mp7" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame3.png" id="7_4bak3"]
 [ext_resource type="Texture2D" uid="uid://c87imc5u78k3c" path="res://assets/img/office/laptop/laptopFrame3.png" id="7_07d2k"]
+[ext_resource type="Texture2D" uid="uid://c0t42jexc8cyn" path="res://assets/img/office/office/fan/fanFrame2.png" id="7_okgyn"]
 [ext_resource type="Texture2D" uid="uid://mdycedvs0wgs" path="res://assets/img/office/cameras/Cam1A/cam1A.png" id="7_sjdia"]
 [ext_resource type="Texture2D" uid="uid://djmwa5081iyq4" path="res://assets/img/office/laptop/laptopFrame4.png" id="8_gnmmx"]
 [ext_resource type="Texture2D" uid="uid://c2hrlmbx1r14m" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame4.png" id="8_p5s8i"]
+[ext_resource type="Texture2D" uid="uid://di1475uig001r" path="res://assets/img/office/office/fan/fanFrame3.png" id="8_uc00e"]
 [ext_resource type="Texture2D" uid="uid://b3gqk07nukbde" path="res://assets/img/office/laptop/laptopFrame5.png" id="9_jp1e5"]
 [ext_resource type="Texture2D" uid="uid://bqnq7nrtoj00k" path="res://assets/img/office/cameras/Cam1B/cam1BBonnie1.png" id="9_likdn"]
 [ext_resource type="Texture2D" uid="uid://bs5wwn843s2i5" path="res://assets/img/office/office/doors/leftDoor/leftDoorFrame5.png" id="9_qkc7n"]
@@ -107,6 +112,8 @@
 [ext_resource type="Script" uid="uid://do18u12rigxbo" path="res://scripts/office/animatronics/chica.gd" id="45_likdn"]
 [ext_resource type="Script" uid="uid://dwctafvpkj4c6" path="res://scripts/office/animatronics/freddy.gd" id="46_bv0q3"]
 [ext_resource type="Script" uid="uid://l33fjq7ukme6" path="res://scripts/office/animatronics/foxy.gd" id="47_pjxyp"]
+[ext_resource type="Script" uid="uid://ctnsb1gv3e743" path="res://scripts/office/nose.gd" id="50_pu11f"]
+[ext_resource type="AudioStream" uid="uid://b66mau48gabrx" path="res://assets/sound/sfx/freddyNose.wav" id="51_62huj"]
 [ext_resource type="Texture2D" uid="uid://qt4h2ty3ynt3" path="res://assets/img/office/cameras/TransitionLines/transitionLines1.png" id="63_wx8ly"]
 [ext_resource type="Texture2D" uid="uid://bk8ugr3j3bagk" path="res://assets/img/office/cameras/TransitionLines/transitionLines2.png" id="64_dqvlh"]
 [ext_resource type="Texture2D" uid="uid://b72cuqwtgwe5x" path="res://assets/img/office/cameras/TransitionLines/transitionLines3.png" id="65_1d6ln"]
@@ -114,6 +121,21 @@
 [ext_resource type="Texture2D" uid="uid://bl2mk0nei7plg" path="res://assets/img/office/cameras/TransitionLines/transitionLines5.png" id="67_gogr1"]
 [ext_resource type="Texture2D" uid="uid://bnua7hi2xfqlx" path="res://assets/img/office/cameras/TransitionLines/transitionLines6.png" id="68_ld7wk"]
 [ext_resource type="AudioStream" uid="uid://jiwi4bvsymjs" path="res://assets/sound/sfx/laptop/blip3.wav" id="69_dqvlh"]
+[ext_resource type="AudioStream" uid="uid://ddyk3khpxxrjn" path="res://assets/sound/sfx/animatronics/bonnie/bonnieSteps.wav" id="117_okgyn"]
+[ext_resource type="AudioStream" uid="uid://cylmpvsvs4oxm" path="res://assets/sound/sfx/animatronics/bonnie/circus.wav" id="118_uc00e"]
+[ext_resource type="Script" uid="uid://dynupjo5ug43u" path="res://scripts/office/animatronics/bonnie_jumpscare.gd" id="121_62huj"]
+[ext_resource type="Texture2D" uid="uid://ci2hcg433dgl2" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie0.png" id="122_j7vub"]
+[ext_resource type="Texture2D" uid="uid://dsg6so46q624u" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie1.png" id="123_hqkhg"]
+[ext_resource type="Texture2D" uid="uid://crk048useqw04" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie2.png" id="124_3bo3x"]
+[ext_resource type="Texture2D" uid="uid://dbw6ew6wceb02" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie3.png" id="125_aqx0a"]
+[ext_resource type="Texture2D" uid="uid://bp7j8edgiwspe" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie4.png" id="126_hoyw1"]
+[ext_resource type="Texture2D" uid="uid://bg262d4l8po4q" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie5.png" id="127_rqhsa"]
+[ext_resource type="Texture2D" uid="uid://cnu2cw7eky6qm" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie6.png" id="128_gbjqc"]
+[ext_resource type="Texture2D" uid="uid://ccxus3nteq3l5" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie7.png" id="129_5nkn4"]
+[ext_resource type="Texture2D" uid="uid://bux7jcer28w8n" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie8.png" id="130_mf0rt"]
+[ext_resource type="Texture2D" uid="uid://dpyc8x78he15k" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie9.png" id="131_3wu7e"]
+[ext_resource type="Texture2D" uid="uid://bre0bwwfy4c38" path="res://assets/img/office/animatronics/bonnie/jumpscareBonnie10.png" id="132_o16e4"]
+[ext_resource type="AudioStream" uid="uid://c4vfmn1o3rkfr" path="res://assets/sound/sfx/animatronics/jumpscare.wav" id="133_hqkhg"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f1ywt"]
 load_path = "res://.godot/imported/officeLeftLightBonnie.png-cb98eaa2b0b4337574c7f4d233b8e01e.ctex"
@@ -123,6 +145,23 @@ load_path = "res://.godot/imported/officeLeftLight.png-58e8222ac095b06abcd2ed5d3
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_trbo1"]
 load_path = "res://.godot/imported/officeRightLight.png-85201e12d4cc12af7669c1fef0e4725b.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ywjj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_13dvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_okgyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uc00e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 32.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dqvlh"]
 animations = [{
@@ -348,6 +387,8 @@ size = Vector2(65, 80)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5bdp"]
 size = Vector2(65, 74)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1hmql"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qphb6"]
 size = Vector2(142, 720)
 
@@ -462,6 +503,47 @@ animations = [{
 "speed": 16.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_kk5cu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("122_j7vub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_hqkhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_3bo3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_aqx0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_hoyw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_rqhsa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_gbjqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_5nkn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_mf0rt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_3wu7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_o16e4")
+}],
+"loop": false,
+"name": &"default",
+"speed": 24.0
+}]
+
 [node name="Office" type="Node2D"]
 script = ExtResource("1_3e7dm")
 metadata/_edit_lock_ = true
@@ -469,6 +551,15 @@ metadata/_edit_lock_ = true
 [node name="ambience2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_n0wcf")
 volume_db = 4.0
+autoplay = true
+
+[node name="DarkAmbient" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_m66co")
+autoplay = true
+
+[node name="FanFluor" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_n6omg")
+volume_db = -12.0
 autoplay = true
 
 [node name="Office" type="Node2D" parent="."]
@@ -492,6 +583,13 @@ texture = SubResource("CompressedTexture2D_f3wdx")
 visible = false
 position = Vector2(640, 360)
 texture = SubResource("CompressedTexture2D_trbo1")
+
+[node name="fanAnimation" type="AnimatedSprite2D" parent="Office"]
+position = Vector2(620, 303)
+sprite_frames = SubResource("SpriteFrames_7ywjj")
+frame_progress = 0.560561
+centered = false
+metadata/_edit_lock_ = true
 
 [node name="doorLogic" type="Node2D" parent="Office"]
 script = ExtResource("4_rcyfd")
@@ -587,6 +685,7 @@ texture = ExtResource("42_wy5dh")
 
 [node name="leftTimer" type="Timer" parent="Office/doorLogic"]
 wait_time = 0.2
+one_shot = true
 
 [node name="openDoor" type="AudioStreamPlayer" parent="Office/doorLogic"]
 stream = ExtResource("35_875dy")
@@ -595,6 +694,17 @@ stream = ExtResource("35_875dy")
 stream = ExtResource("36_dpic4")
 
 [node name="rightTimer" type="Timer" parent="Office/doorLogic"]
+one_shot = true
+
+[node name="freddyNose" type="Area2D" parent="Office"]
+script = ExtResource("50_pu11f")
+
+[node name="FreddyNose" type="AudioStreamPlayer" parent="Office/freddyNose"]
+stream = ExtResource("51_62huj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Office/freddyNose"]
+position = Vector2(518, 239)
+shape = SubResource("RectangleShape2D_1hmql")
 
 [node name="hoverController" type="Node2D" parent="."]
 script = ExtResource("3_jwaux")
@@ -762,6 +872,7 @@ visible = false
 texture = ExtResource("28_qakv3")
 
 [node name="Chica3" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
+visible = false
 texture = ExtResource("29_c12kp")
 
 [node name="Freddy" type="Sprite2D" parent="camerasNode/cameraSystem/Cam4B"]
@@ -944,7 +1055,27 @@ stream = ExtResource("69_dqvlh")
 [node name="Bonnie" type="Node" parent="AnimatronicsAI"]
 script = ExtResource("44_ak7v7")
 
+[node name="BonnieSteps" type="AudioStreamPlayer" parent="AnimatronicsAI/Bonnie"]
+stream = ExtResource("117_okgyn")
+
+[node name="Circus" type="AudioStreamPlayer" parent="AnimatronicsAI/Bonnie"]
+stream = ExtResource("118_uc00e")
+volume_db = -20.0
+
 [node name="Timer" type="Timer" parent="AnimatronicsAI/Bonnie"]
+
+[node name="BonnieJumpscare" type="Node" parent="AnimatronicsAI/Bonnie"]
+script = ExtResource("121_62huj")
+
+[node name="bonnieJumpscare" type="AnimatedSprite2D" parent="AnimatronicsAI/Bonnie/BonnieJumpscare"]
+visible = false
+position = Vector2(-160, 0)
+sprite_frames = SubResource("SpriteFrames_kk5cu")
+frame_progress = 0.918508
+centered = false
+
+[node name="bonnieJumpscareSound" type="AudioStreamPlayer" parent="AnimatronicsAI/Bonnie/BonnieJumpscare"]
+stream = ExtResource("133_hqkhg")
 
 [node name="Chica" type="Node" parent="AnimatronicsAI"]
 script = ExtResource("45_likdn")
@@ -970,6 +1101,7 @@ autostart = true
 [connection signal="input_event" from="Office/doorLogic/rightDoorCloseButton" to="Office/doorLogic" method="_on_right_door_close_button_input_event"]
 [connection signal="timeout" from="Office/doorLogic/leftTimer" to="Office/doorLogic" method="_on_leftTimer_timeout"]
 [connection signal="timeout" from="Office/doorLogic/rightTimer" to="Office/doorLogic" method="_on_right_timer_timeout"]
+[connection signal="input_event" from="Office/freddyNose" to="Office/freddyNose" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1A" to="camerasNode/CameraButtons/Cam1A" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1B" to="camerasNode/CameraButtons/Cam1B" method="_on_input_event"]
 [connection signal="input_event" from="camerasNode/CameraButtons/Cam1C" to="camerasNode/CameraButtons/Cam1C" method="_on_input_event"]

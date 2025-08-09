@@ -3,10 +3,10 @@ extends Area2D
 @onready var laptopButton = self
 @onready var laptopButtonSprite = $LaptopButtonSprite
 
-@onready var openingLaptopAnimation = $"openingLaptop"
+@onready var openingLaptopAnimation := $openingLaptop
 @onready var closingLaptopAnimation := $closingLaptop
 
-@onready var openingLaptopSound := $"openingLaptopSound"
+@onready var openingLaptopSound := $openingLaptopSound
 @onready var closingLaptopSound := $closingLaptopSound
 
 @onready var cameraSystem: Node2D = $"../cameraSystem"
@@ -25,9 +25,11 @@ func _ready() -> void:
 	
 	laptopButton.mouse_entered.connect(func ():
 		if NightStats.canOpenLaptop:
+			#Abrir laptop
 			if  !NightStats.openLaptop: 
 				NightStats.openLaptop = true
 				NightStats.canOpenLaptop = false
+				
 				
 				#Activar nodo de las camaras
 				cameraSystem.visible= true
@@ -39,7 +41,8 @@ func _ready() -> void:
 				
 				#Esconder el boton usado
 				laptopButtonSprite.visible = false
-				
+			
+			#Cerrar Laptop
 			else:
 				#Esconder Camaras
 				cameraSystem.visible= false
@@ -48,6 +51,9 @@ func _ready() -> void:
 				
 				NightStats.openLaptop = false
 				NightStats.canOpenLaptop = false
+				
+				#Mod sondio
+				$"../../FanFluor".volume_db /= 2
 				
 				#Ejecutar animacion
 				closingLaptopAnimation.visible = true
@@ -64,6 +70,9 @@ func _open_on_animation_finished() -> void:
 	cameraUI.visible = true
 	cam1A.visible = true
 	cam1ABackground.visible = true
+	
+	#Mod sondio
+	$"../../FanFluor".volume_db *= 2 
 	
 	#Autoload
 	NightStats.canOpenLaptop = true

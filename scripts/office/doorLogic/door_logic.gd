@@ -93,6 +93,8 @@ func _right_on_animation_finished():
 
 @onready var left_b_01: Sprite2D = $leftDoorCloseButton/leftButtons/b01
 
+@onready var light_doorSound: AudioStreamPlayer = $lightDoor
+
 var _glitch_stepLeft = 0
 var _glitchingLeft = false
 
@@ -104,6 +106,7 @@ func start_left_glitch():
 	
 	_glitchingLeft = true
 	_glitch_stepLeft = 0
+	light_doorSound.play()
 	left_timer.wait_time = 0.02  # 20ms
 	left_timer.start()
 
@@ -120,7 +123,7 @@ func _on_leftTimer_timeout() -> void:
 		left_b_01.visible = false
 		_glitchingLeft = false
 		left_b_11.visible = false
-		
+		light_doorSound.stop()
 
 func _on_left_door_light_button_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -143,6 +146,7 @@ func start_right_glitch():
 	
 	_glitchingRight = true
 	_glitch_stepRight = 0
+	light_doorSound.play()
 	right_timer.wait_time = 0.02  # 20ms
 	right_timer.start()
 
@@ -159,6 +163,7 @@ func _on_right_timer_timeout() -> void:
 		right_b_01.visible = false
 		_glitchingRight = false
 		right_b_11.visible = false
+		light_doorSound.stop()
 
 
 func _on_right_door_light_button_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:

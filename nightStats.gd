@@ -4,12 +4,12 @@ var openLaptop := false
 var canOpenLaptop := true
 
 #AwaitTime
-var bonnieWaitTime := 5
-var chicaWaitTime := 1
+var bonnieWaitTime := 1
+var chicaWaitTime := 5
 
 #AI
-var bonnieAI := 0 #TODO Automatizar por noche
-var chicaAI := 30
+var bonnieAI := 30 #TODO Automatizar por noche
+var chicaAI := 0
 var freddyAI := 0
 var foxyAI := 0
 

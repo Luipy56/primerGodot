@@ -4,7 +4,7 @@ extends Node2D
 @export var wait_duration := 3.0
 
 var _time_accumulator := 0.0
-var _active := false
+#var _active := false
 
 const MAX_LEFT = 480
 const MAX_RIGHT = 800
@@ -14,7 +14,7 @@ var _waiting := false
 
 func _ready() -> void:
 	#transition_lines.visible = false
-	transition_lines.animation_finished.connect(_open_on_animation_finished)
+	pass
 	
 
 
@@ -46,26 +46,22 @@ func _process(delta):
 				position.x += moveDirection
 	#endregion
 
-func start_animation():
-	_active = true
-	_time_accumulator = 0.0
-
-func stop_animation():
-	_active = false
+#func start_animation():
+	#_active = true
+	#_time_accumulator = 0.0
+#
+#func stop_animation():
+	#_active = false
 	
 @onready var currentCamera: Node2D = $Cam1A
 
-@onready var transition_lines: AnimatedSprite2D = $"../transitionLines"
-@onready var transition_lines_sound: AudioStreamPlayer = $"../transitionLinesSound"
+
 
 
 func changeCamera(id: String):
 	if currentCamera.name == id: return
 	
-	#Animacion transicion y sonido
-	transition_lines.visible = true
-	transition_lines.play()
-	transition_lines_sound.play()
+	$"..".transitionLines()
 		
 	# Ocultar la camara actual
 	if currentCamera: currentCamera.visible = false
@@ -88,15 +84,15 @@ func changeCamera(id: String):
 	#print(seleccionado)
 	#animActualCam = seleccionado
 	
+#Funcion para usar en otro Script
 func activateAnimatronicCamera(array_base: Array, index: int) -> Node:
 	var opciones = array_base[index]
 	var seleccionado = opciones[randi() % opciones.size()] if opciones is Array else opciones
 	seleccionado.visible = true
 	#print(seleccionado)
+	$"..".transitionLines()
 	return seleccionado
 
-func _open_on_animation_finished():
-	transition_lines.visible = false
 	
 
 

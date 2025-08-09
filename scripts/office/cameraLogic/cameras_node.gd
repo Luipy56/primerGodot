@@ -6,70 +6,21 @@ var animatronicCamsList = []
 
 @onready var cameraSystem = $"cameraSystem"
 
-#var dic = {
-	#"cam1A":{
-		#"normal":null,
-		#"bonnie":null,
-		#"chica":null
-	#},
-	#"cam1Adata":null,
-	#"cam1B":{
-		#"normal":null,
-		#"bonnie1":null,
-		#"bonnie2":null,
-		#"chica1":null,
-		#"chica2":null,
-		#"freddy":null
-	#},
-	#"cam1Bdata":null,
-#}
+func changeCamera(id): cameraSystem.changeCamera(id)
+
+@onready var transition_lines: AnimatedSprite2D = $transitionLines
+@onready var transition_lines_sound: AudioStreamPlayer = $transitionLinesSound
 
 func _ready() -> void:
-	pass
-	#spriteCam.texture = null
-	#cameraSystem.visible = true
-	#var fileNames = [
-		#"cam1A",
-		#"cam1B",
-		#"cam1C",
-		#"cam2A",
-		#"cam2B",
-		#"cam3",
-		#"cam4A",
-		#"cam4B",
-		#"cam5",
-		#"cam6",
-		#"cam7"
-	#]
-	#var fileAnimatronicNames = [
-		#"cam1A",
-		#"cam1B",
-		#"cam1C",
-		#"cam2A",
-		#"cam2B",
-		#"cam3",
-		#"cam4A",
-		#"cam4B",
-		#"cam5",
-		#"cam6",
-		#"cam7"
-	#]
+	transition_lines.animation_finished.connect(_open_on_animation_finished)
 
-	#for name in fileNames:
-		#var ruta = "res://assets/img/office/cameras/"+ name +".png"
-		#var textura = load(ruta)
-		#if not textura:
-			#push_warning("No se pudo cargar: " + ruta)
-			#continue
-		#normalCamsList.append(textura)
-		
-	#for name in fileAnimatronicNames:
-		#var ruta = "res://assets/img/office/cameras/" + name +".png"
-		#var textura = load(ruta)
-		#if not textura:
-			#push_warning("No se pudo cargar: " + ruta)
-			#continue
-		#normalCamsList.append(textura)
+func transitionLines():
+	#Animacion transicion y sonido
+	transition_lines.visible = true
+	transition_lines.play()
+	transition_lines_sound.play()
+	
+func _open_on_animation_finished():
+	transition_lines.visible = false
 
-func changeCamera(id): cameraSystem.changeCamera(id)
 	

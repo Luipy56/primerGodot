@@ -25,7 +25,8 @@ var rand: int
 			$"../../camerasNode/cameraSystem/Cam4B/Chica2",
 			$"../../camerasNode/cameraSystem/Cam4B/Chica3"
 		],#TODO PUERTA
-			$"../../Office/chicaLight"
+			$"../../Office/rightLight"
+			#$"../../Office/chicaLight"
 	]
 
 func _ready():
@@ -37,15 +38,14 @@ func _ready():
 var rightLightChica := load("res://assets/img/office/office/officeRightLightChica.png")
 var rightLight := load("res://assets/img/office/office/officeRightLight.png")
 var randLocal := 1
-var tmpTexture: Texture
 func _on_timer_timeout() -> void:
 	if NightStats.chicaIsAttacking:
+		
 		if NightStats.rightDoorClosed:
 			NightStats.chicaIsAttacking = false
 			NightStats.chicaPosition = 1
 			NightStats.chicaActualCam.visible = false
-			NightStats.chicaActualCam = $"../../camerasNode/cameraSystem".activateAnimatronicCamera(camsWithChica,NightStats.chicaPosition-1)
-			print("Quito")
+			
 			right_light_node.texture = rightLight
 		else:
 			#Debe de atacar
@@ -59,12 +59,11 @@ func _on_timer_timeout() -> void:
 		if not (NightStats.chicaPosition in [0, 1, 6]):
 			randLocal = -1 if (randi() % 100) < 10 else 1
 		NightStats.chicaPosition += randLocal
-		
 		NightStats.chicaActualCam.visible = false
-		#NightStats.chicaActualCam = $"../../camerasNode/cameraSystem".activateAnimatronicCamera(camsWithChica, NightStats.chicaPosition - 1)
 		
-		right_light_node.texture = rightLightChica
-		
+		#Si Chica en Puerta
 		if NightStats.chicaPosition == NightStats.chicaMaxPosition-1:
-			print(NightStats.chicaPosition)
 			NightStats.chicaIsAttacking = true
+			right_light_node.texture = rightLightChica
+		else:
+			NightStats.chicaActualCam = $"../../camerasNode/cameraSystem".activateAnimatronicCamera(camsWithChica, NightStats.chicaPosition - 1)

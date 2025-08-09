@@ -10,8 +10,8 @@ var moveLeftLocked := false
 var moveRightLocked := false
 
 var current_speed := 50.0
-const MAX_SPEED := 450.0  # px/s
-const ACCEL_TIME := 1.5   # segundos para alcanzar MAX_SPEED
+const MAX_SPEED := 550.0  # px/s
+const ACCEL_TIME := 0.7  # segundos para alcanzar MAX_SPEED
 var acceleration := MAX_SPEED / ACCEL_TIME
 
 const MAX_LEFT = -160
